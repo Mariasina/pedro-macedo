@@ -1,0 +1,296 @@
+/** Css Cabeçalho Duplo **/
+
+.cabeça {
+	background-color: #ceebfb;
+}
+.form-control-dark {
+    border-color: var(--bs-gray);
+  }
+  .form-control-dark:focus {
+    border-color: #ceebfb;
+    box-shadow: 0 0 0 .25rem rgba(255, 255, 255, 0.25);
+  }
+  
+  .text-small {
+    font-size: 85%;
+  }
+  
+  .dropdown-toggle {
+    outline: 0;
+  }
+  .logo {
+    width: 18%;
+  }
+.prlogo {
+  width: 6%;
+  text-align: center;
+}
+.logocentro {
+  position: relative;
+  left: 50%;
+}
+.nome {
+  font-size: 20px;
+}
+.nome2 {
+  font-size: 25px;
+}
+  /** Fim cabeçalho duplo **/
+
+  /** Começo do Menu **/
+ 
+.clicky-menu ul {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	visibility: hidden; /*[1]*/
+}
+/** navegadores modernos suportam passar o mouse e descer, aqui não há js **/
+
+.clicky-menu.no-js li:hover > ul {
+	visibility: visible;
+}
+.clicky-menu.no-js li:focus-within > ul { /*[2]*/
+	visibility: visible;
+}
+
+/**
+ * Abre e fecha o Menu com JS
+ */
+
+.clicky-menu ul[aria-hidden="false"] {
+	visibility: visible;
+}
+
+/*Impede submenus fora da tela */
+
+.clicky-menu .sub-menu--right {
+	left: auto !important;
+	right: 0 !important;
+}
+
+/**
+ * Notas de rodapé
+ *
+ * [1] Usar `visibility` em vez de `display` permite transições mais fáceis e animação de submenus
+ * [2] Deve ser um conjunto de regras separado para que o foco funcione em navegadores não modernos
+ */
+
+
+/* DEMO CSS */
+body {
+	margin: 0;
+	min-height: 100vh;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+				 Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+				 "Helvetica Neue", sans-serif;
+} 
+
+/* Hidden SVG usando para as setas escondidas no menu */
+svg[hidden] {
+	display: none;
+	position: absolute;
+}
+
+/* mexe no menu em si */
+.site-navigation {
+	width: 86%;
+	max-width: 782px;
+	margin: -20px auto 10px;
+	box-shadow: 2px 2px 4px rgba(255, 0, 0, 0.2);
+	background-color: #ceebfb;
+	border-radius: 4px;
+}
+
+.clicky-menu {
+	justify-content: stretch;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+@media (min-width: 540px) {
+	.clicky-menu {
+		display: flex;
+	}
+}
+
+/* Link geral e decoração dos botões */
+.clicky-menu a,
+.clicky-menu button {
+	margin: .25em;
+	padding: 1em;
+	background: transparent;
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: inherit;
+	border-radius: 3px;
+}
+
+.clicky-menu a:hover,
+.clicky-menu button:hover {
+	background: #98c3ed;
+}
+
+.clicky-menu a:focus,
+.clicky-menu button:focus {
+	outline: .125em dotted rgb(6, 0, 48);
+	outline-offset: -.125em;
+}
+
+/* Top Level Items */
+.clicky-menu > li {
+	position: relative;
+	flex: 1 1 auto;
+	display: flex;
+	justify-content: stretch;
+	flex-wrap: wrap;
+}
+
+.clicky-menu > li > a,
+.clicky-menu > li > button {
+	flex: 1 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	border: 0;
+	font-size: inherit;
+	line-height: 1.5;
+	cursor: pointer;
+}
+@media (min-width: 540px) {
+	.clicky-menu > li > a,
+	.clicky-menu > li > button {
+		justify-content: center;
+	}	
+}
+
+/* Icone */
+.clicky-menu svg {
+	width: 1em;
+	height: 1em;
+	margin-left: .5em;
+}
+
+.clicky-menu [aria-expanded="true"] svg {
+	transform: scaleY(-1);
+}
+
+/* Submenu Styles */
+.clicky-menu ul {
+	min-width: 100%;
+	width: 12em;
+	margin-top: .25em;
+	padding: 0;
+	list-style: none;
+	background-color: #ceebfb;
+	border-radius: 3px;
+	z-index: 99;
+}
+@media (min-width: 540px) {
+	.clicky-menu {
+		box-shadow: 2px 4px 4px rgba(0, 16, 61, 0.2);
+	}
+}
+
+/* Submenu Responsivo */
+.clicky-menu ul[aria-hidden="false"] {
+	position: static;
+	width: 100%;
+	flex: 0 0 auto;
+}
+
+@media (min-width: 540px) {
+	.clicky-menu ul[aria-hidden="false"] {
+		position: absolute;
+		width: auto;
+	}
+}
+
+/* Submenu Links */
+.clicky-menu ul a {
+	display: block;
+	padding-top: .375em;
+	padding-bottom: .375em;
+}
+@media (min-width: 540px) {
+	.clicky-menu ul a {
+		padding: .375em 1em;
+		white-space: nowrap;
+	}
+}
+
+.github {
+	text-align: center;
+	a {
+		color: #fff;
+		opacity: .6;
+		
+		&:hover,
+		&:focus {
+			opacity: 1;
+		}
+	}
+}
+
+/** Fim do Menu **/
+/* começo rodapé */
+.pezin {
+	position: absolute;
+	background-color: #98c3ed;
+	width: 100%;
+	margin: 0px;
+	padding-left: 0;
+	border: #3b3f7e;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+body {
+    background: linear-gradient(0deg, #fff, 50%, #DEEEFE);
+    font-family: 'Rubik', sans-serif;
+    background: #ffffff;
+    height: 100 !important;
+}
+
+
+.container-fluid{
+    overflow:hidden; 
+    margin-top: 250px ;
+    background:#262626 ;
+    color: #ffffff  !important;
+    margin-bottom: 0 ;
+    padding-bottom:0  ;
+}
+
+small{
+    font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important; 
+}
+
+.bold-text{
+    color: #3b535f !important;
+}
+
+
+.mt-55{
+    margin-top: calc(50px + (60 - 50) * ((100vw - 360px) / (1600 - 360))) !important; 
+}
+
+
+h3{
+    font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important; 
+}
+ 
+.social{
+    font-size: 21px !important; 
+}
+
+.rights{
+    font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important; 
+}
+.tira {
+    text-decoration: none;
+}
+
+
+/* Fim Rodapé */

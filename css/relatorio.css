@@ -1,0 +1,15 @@
+.centro{
+    align-items: center;
+    display: flex;
+    position: relative;
+    left: 35%;
+}
+
+h1, h2, h3 {
+  font-weight: 900;
+  
+}
+
+.z .d {
+  background-color: silver;
+}
