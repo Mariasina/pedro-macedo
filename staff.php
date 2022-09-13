@@ -13,12 +13,14 @@
     </head>
     <body>
         
+        <!--Mostra o nome do usuário cadastrado--> 
         Olá, <?php echo $_SESSION['nome'];?><br>
         <!--Todos os "if perfil 1" mostram informações que apenas o administrador vê."-->
         <?php if($_SESSION['perfil'] == 1){?>
         Você é um Administrador.<br>
         <?php }?>
-
+        <!--Links-->
+        <a href="usuarios_cadastrados.php">Usuários Cadastrados</a>
         <a href="bd/logout.php">Sair</a> 
     </body>
 </html>
