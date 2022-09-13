@@ -54,7 +54,7 @@
                 <p>SIM</p>
                 </div>     
                 <a href="javascript: abrir();"><button>Editar</button></a>
-                <a href="javascript: abrir();"><button>Excluir</button></a><br><br>
+                <a href="javascript: abrir();"><button>Excluir</button></a><br><br>.
 
         <?php
                 }
