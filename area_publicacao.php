@@ -1,3 +1,8 @@
+<?php
+  session_start();
+    include('bd/verifica_login.php');   
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -7,6 +12,6 @@
         <title>Área de publicação</title>
     </head>
     <body>
-        
+        <a href="criar_publicacao.php">Criar uma nova publicação</a>
     </body>
 </html>

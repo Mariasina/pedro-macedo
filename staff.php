@@ -1,8 +1,8 @@
 <?php
     session_start();
-    include('bd/verifica_login.php');
-    
+        include('bd/verifica_login.php');   
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -20,7 +20,11 @@
         Você é um Administrador.<br>
         <?php }?>
         <!--Links-->
+        <a href="area_publicacao.php">Área de publicação</a>
         <a href="usuarios_cadastrados.php">Usuários Cadastrados</a>
+        <?php if($_SESSION['perfil'] == 1){?>
+        <a href="aceitar_cadastro.php">Aceitar Cadastros Novos</a>
+        <?php }?>
         <a href="bd/logout.php">Sair</a> 
     </body>
 </html>
