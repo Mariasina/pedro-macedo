@@ -13,5 +13,17 @@
     </head>
     <body>
         <a href="criar_publicacao.php">Criar uma nova publicação</a>
+        <hr>
+        <div> 
+            <h4>Título</h4>
+            <img>
+            <div>
+                Descrição da publicação. Descrição da publicação. Descrição da publicação. Descrição da publicação. Descrição da publicação. Descrição da publicação. Descrição da publicação. Descrição da publicação. 
+            </div><br>
+            <div>
+                <button>Leia mais</button>
+            </div>
+        </div>
+        <hr>
     </body>
 </html>
