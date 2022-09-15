@@ -13,8 +13,7 @@
     $sql = "INSERT INTO 
                 usuario (nome, email, senha, perfil_cod)
                 VALUES
-                ('$nome', '$email', '$senha', '$perfil')
-            ";
+                ('$nome', '$email', '$senha', '$perfil')";
     
     //variável para redirecionar o usuário se o cadastro for feito com sucesso
     $resultado = mysqli_query($conexao, $sql);
