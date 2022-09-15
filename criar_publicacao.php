@@ -19,7 +19,7 @@
         <label>Imagem</label>
             <input type="file" name="arquivo"><br>
         <label>Publicação</label>
-            <textarea name="post" rows="5"></textarea><br> 
+            <textarea name="descricao" rows="5"></textarea><br> 
         <input type="submit" value="Enviar Publicação">
     </form>
 </body>
