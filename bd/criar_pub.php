@@ -11,8 +11,8 @@
     $data = $_POST['data'];
     $cod_usuario = $_SESSION['cod'];
 
-    $uploaddir = '../images/uploads/';		
-    $uploaddirN = 'images/uploads/';
+    $uploaddir = 'img';		
+    $uploaddirN = 'img';
 	$uploadfile = $uploaddir.basename($_FILES['arquivo']['name']);
 	$uploadfileN = $uploaddirN.basename($_FILES['arquivo']['name']);
 
