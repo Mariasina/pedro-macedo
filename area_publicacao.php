@@ -28,7 +28,7 @@
             ?>
                 <br><br>
                 <button>Visualizar</button>
-                <button>Editar</button>
+                <button><a href="editar_publicacao.php">Editar</a></button>
                 <button><a href="bd/excluir_pub.php">Excluir</a></button>
                 <hr><br>
             <?php

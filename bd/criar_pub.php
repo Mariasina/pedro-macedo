@@ -3,7 +3,7 @@
     include("conexao.php");
 
     date_default_timezone_set('America/Sao_Paulo');
-    $data = date('d/m/Y');
+    $data = date('d/m/Y H:i');
 
     //criando as variáves para criar uma postagem
     $titulo = $_POST['titulo'];

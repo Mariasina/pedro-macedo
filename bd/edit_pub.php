@@ -10,7 +10,7 @@
             SET titulo = '$titulo', descricao = '$descricao', data = '$data'";
 
     echo $sql;
-    $resultado = mysqli_query($con, $sql);
+    $resultado = mysqli_query($conexao, $sql);
 
     if($resultado == true){
         header("Location:../area_publicacao.php");
