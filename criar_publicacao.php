@@ -13,6 +13,7 @@
     <title>Criar Publicação</title>
 </head>
 <body>
+    <!--foruláio para cadastro da publicação -->
     <form action="bd/criar_pub.php" method="post">
         <label>Título</label>
             <input type="text" name="titulo"><br>

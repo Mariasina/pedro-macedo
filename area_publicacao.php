@@ -1,5 +1,5 @@
 <?php
-  session_start();
+    session_start();
     include('bd/verifica_login.php');   
 ?>
 
@@ -12,18 +12,28 @@
         <title>Área de publicação</title>
     </head>
     <body>
+        <a href="staff.php">Perfil</a>
         <a href="criar_publicacao.php">Criar uma nova publicação</a>
-        <hr>
         <div> 
-            <h4>Título</h4>
-            <img>
-            <div>
-                Descrição da publicação. Descrição da publicação. Descrição da publicação. Descrição da publicação. Descrição da publicação. Descrição da publicação. Descrição da publicação. Descrição da publicação. 
-            </div><br>
-            <div>
-                <button>Leia mais</button>
-            </div>
+            <h1>Publicações</h1>
+            <?php
+                $selecionar = "SELECT * FROM publicacao";
+                $resultado = mysqli_query ($conexao, $selecionar);
+            
+                while($row_usuario = mysqli_fetch_assoc($resultado)){
+
+                echo "<hr><h3>" . $row_usuario['titulo'] . "</h3>";
+                echo "" . $row_usuario['descricao'] . "<br>"; 
+                echo "" . $row_usuario['data'] 
+            ?>
+                <br><br>
+                <button>Visualizar</button>
+                <button>Editar</button>
+                <button><a href="bd/excluir_pub.php">Excluir</a></button>
+                <hr><br>
+            <?php
+            ;}
+            ?>  
         </div>
-        <hr>
     </body>
 </html>

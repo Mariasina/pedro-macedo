@@ -1,6 +1,6 @@
 <?php
     session_start();
-        include('bd/verifica_login.php');
+    include('bd/verifica_login.php');
 ?>
 
 <!DOCTYPE html>
@@ -36,13 +36,13 @@
 
             include("bd/conexao.php");
 
-            if(isset($_SESSION['msg'])){
+            /*if(isset($_SESSION['msg'])){
                 echo $_SESSION['msg'];
                 unset($_SESSION['msg']);
-            }
+            }*/
 
-            $relatorio = "SELECT * FROM usuario";
-            $resultado = mysqli_query ($conexao, $relatorio);
+            $selecionar = "SELECT * FROM usuario";
+            $resultado = mysqli_query ($conexao, $selecionar);
             
             while($row_usuario = mysqli_fetch_assoc($resultado)){
         ?>
