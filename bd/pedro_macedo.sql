@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 15-Set-2022 às 05:01
+-- Tempo de geração: 20-Set-2022 às 01:20
 -- Versão do servidor: 10.4.24-MariaDB
 -- versão do PHP: 8.1.6
 
@@ -73,16 +73,16 @@ CREATE TABLE `publicacao` (
   `titulo` varchar(500) NOT NULL,
   `descricao` varchar(10000) NOT NULL,
   `imagem` varchar(100) NOT NULL,
-  `data` varchar(100) NOT NULL
+  `data` varchar(100) NOT NULL,
+  `usuario_cod` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `publicacao`
 --
 
-INSERT INTO `publicacao` (`cod`, `titulo`, `descricao`, `imagem`, `data`) VALUES
-(1, 'Estudar', '', '', ''),
-(2, 'Estudar', '', '', '');
+INSERT INTO `publicacao` (`cod`, `titulo`, `descricao`, `imagem`, `data`, `usuario_cod`) VALUES
+(4, 'tert', 'retew', '', '19/09/2022 20:19', 7);
 
 -- --------------------------------------------------------
 
@@ -123,7 +123,8 @@ ALTER TABLE `perfil_usuario`
 -- Índices para tabela `publicacao`
 --
 ALTER TABLE `publicacao`
-  ADD PRIMARY KEY (`cod`);
+  ADD PRIMARY KEY (`cod`),
+  ADD KEY `fk_usuario_cod` (`usuario_cod`);
 
 --
 -- Índices para tabela `usuario`
@@ -146,7 +147,7 @@ ALTER TABLE `perfil_usuario`
 -- AUTO_INCREMENT de tabela `publicacao`
 --
 ALTER TABLE `publicacao`
-  MODIFY `cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de tabela `usuario`
