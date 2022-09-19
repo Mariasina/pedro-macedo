@@ -13,17 +13,11 @@ html {
 
 body {
   --light: hsl(220, 50%, 90%);
-  --primary: hsl(255, 30%, 55%);
-  --focus: hsl(210, 90%, 50%);
-  --border-color: hsla(0, 0%, 100%, .2);
-  --global-background: hsl(220, 25%, 10%);
   --background: linear-gradient(to right, hsl(210, 30%, 20%), hsl(255, 30%, 25%));
   --shadow-1: hsla(236, 50%, 50%, .3);
   --shadow-2: hsla(236, 50%, 50%, .4);
 
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', sans-serif;
-  color: var(--light);
-  background: var(--global-background);
 }
 
 a,
@@ -32,13 +26,7 @@ a:link {
   text-decoration: none;
 }
 
-a:focus {
-  outline: none;
-}
 
-button::-moz-focus-inner {
-  border: 0;
-}
 
 
 /* box */
@@ -55,33 +43,8 @@ button::-moz-focus-inner {
   height: 45rem;
 }
 
-.box__title {
-  font-size: 10rem;
-  font-weight: normal;
-  letter-spacing: .8rem;
-  margin-bottom: 2.6rem;
-}
+/* pop up  */
 
-.box__title::first-letter {
-  color: var(--primary);
-}
-
-.box__p,
-.box__info,
-.box__note {
-  font-size: 1.6rem;
-}
-
-.box__info {
-  margin-top: 6rem;
-}
-
-.box__note {
-  line-height: 2;
-}
-
-
-/* modal */
 .modal-container {
   position: fixed;
   top: 0;
@@ -95,13 +58,13 @@ button::-moz-focus-inner {
   width: 100%;
   height: 100%;
 
-  /* --m-background is set as inline style */
+  /* --m-background é como um estilo em linha  */
   background: var(--m-background);
 }
 
-/* using :target */
+/* usando :target */
 /*
-when users will click/enter button(link) browser will add a #id in a url and when that happens we'll show our users the modal that contains that id.
+quando os usuários clicarem/entrar no botão (link) o navegador adicionará um #id em uma url e quando isso acontecer, mostraremos aos nossos usuários o modal que contém esse id.
 */
 .modal-container:target {
   display: flex;
@@ -119,11 +82,13 @@ when users will click/enter button(link) browser will add a #id in a url and whe
 
   overflow: hidden;
 }
+/**titulo css **/
 
 .modal__title {
   font-size: 3.2rem;
 }
 
+/** texto popup **/
 .modal__text {
   padding: 0 4rem;
   margin-top: 4rem;
