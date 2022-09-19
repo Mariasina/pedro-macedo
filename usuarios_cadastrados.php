@@ -20,6 +20,7 @@
         <header>
         
         </header>
+        <a href="staff.php">Perfil</a>
         <!--css do título-->
         <div class = "centro">
             <article class="z"> 
@@ -34,7 +35,7 @@
         <!--Pega as informações dos usuários cadastrados e cria uma variável para que sejam exibidos-->
         <?php
 
-            include("bd/conexao.php");
+            //include("bd/conexao.php");
 
             /*if(isset($_SESSION['msg'])){
                 echo $_SESSION['msg'];
