@@ -2,10 +2,19 @@
     session_start();
     include('bd/verifica_login.php');
 
-    $cod = $_GET['cod'];
+    $cod = $_SESSION['cod'];
+    //$cod = $_GET['cod'];
     $sql = "SELECT * FROM publicacao where cod = $cod";
     $result_publicacao = mysqli_query($conexao, $sql);
     $publicacao = mysqli_fetch_array($result_publicacao);
+
+    // $explode = explode('/', $url);
+    // $cod_pub = addslashes($explode['1']);
+	// $query = $conexao->prepare("SELECT * FROM publicacao WHERE cod = ?");
+	// $query->bind_param("s", $cod_pub);
+	// $query->execute();
+	// $get = $query->get_result();
+	// $dados = $get->fetch_assoc();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -16,11 +25,14 @@
     <title>Document</title>
 </head>
 <body>
-    <label>Título</label>
-        <input type="text" name="titulo" <?= $publicacao['titulo']?>><br>
-    <label>Imagem</label>
-        <input type="file" name="arquivo" <?= $publicacao['imagem']?>><br>
-    <label>Publicação</label>
-        <textarea name="descricao" rows="5" <?= $publicacao['descricao']?>></textarea><br> 
+    <form action="bd/edit_pub.php" method="post">
+        <input type="hidden" value="<?=$cod;?>" name="cod">
+        <label>Título</label>
+            <input type="text" name="titulo" <?= $publicacao['titulo']?>><br>
+        <label>Imagem</label>
+            <input type="file" name="arquivo" <?= $publicacao['imagem']?>><br>
+        <label>Publicação</label>
+            <textarea name="descricao" rows="5" <?= $publicacao['descricao'];?>></textarea><br>
+    </form> 
 </body>
 </html>
