@@ -20,6 +20,7 @@
         Você é um Administrador.<br>
         <?php }?>
         <!--Links-->
+        <a href="index.html">Página inicial</a>
         <a href="area_publicacao.php">Área de publicação</a>
         <a href="usuarios_cadastrados.php">Usuários Cadastrados</a>
         <?php if($_SESSION['perfil'] == 1){?>

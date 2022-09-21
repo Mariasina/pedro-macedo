@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
             <link rel = "stylesheet" href = "css/relatorio.css">
-            <link rel = "stylesheet" href = "css/popups.css">
+            <!--<link rel = "stylesheet" href = "css/popups.css">-->
             <script src="js/popups.js"></script>
         
         <title>Usuários Cadastrados</title>
@@ -49,16 +49,12 @@
         <article class="z"> 
         <div class="d">   
         <?php   
-                echo "Nome:" . $row_usuario['nome'] . "<br>";
+                echo "<hr>Nome:" . $row_usuario['nome'] . "<br>";
                 echo "E-mail:" . $row_usuario['email'] . "<br><br>"; 
             
                 //Todos os "if perfil 1" mostram informações que apenas o administrador vê.
                 if($_SESSION['perfil'] == 1){
-        ?>
-  
-
-
-<!-- botao pop up-->
+/*<!-- botao pop up-->
 <div class="box">
   <!-- mudar o que esta escrito no botao -->
   <a href="#m1-o" class="link-1" id="m1-c">
@@ -123,9 +119,10 @@
     </div>
   </div>
 </div>
-<!-- /modal 1 -->
-
-
+<!--/modal 1 -->*/
+        ?>
+          <button>Editar</button>
+          <button>Excluir</button><hr><br>
 
         <?php
                 }

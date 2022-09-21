@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    include('bd/conexao.php');  
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
@@ -62,7 +67,7 @@ crossorigin="anonymous">
 <nav id="site-navigation" class="site-navigation" aria-label="Clickable Menu Demonstration">
 	<ul class="main-menu clicky-menu no-js">
 		<li>
-			<a href="noticias.html">Notícias</a>
+			<a href="noticias.php">Notícias</a>
 		</li>
 		<li>
 			<a href="historiacolegio.html">História</a>
@@ -126,7 +131,29 @@ crossorigin="anonymous">
 	</ul>
 </nav>
 <!-- Fim Menu-->
-    noticias bd
+<!--Publicações-->
+	<?php
+		$selecionar = "SELECT * FROM publicacao";
+		$resultado = mysqli_query ($conexao, $selecionar);
+				
+		while($row_usuario = mysqli_fetch_assoc($resultado)){
+
+		echo "<hr><h3>" . $row_usuario['titulo'] . "</h3>";
+		echo "" . $row_usuario['descricao'] . "<br>"; 
+		echo "" . $row_usuario['data'] ;
+	?>
+		<br><br>
+	<?php
+		if($_SESSION['perfil'] == 1 ){
+	?>
+	
+		<button>Visualizar</button>
+		<button><a href="editar_publicacao.php">Editar</a></button>
+		<button><a href="bd/excluir_pub.php">Excluir</a></button>
+		<hr><br>
+	<?php
+		}}
+	?>  
 <!-- Começo Rodapé-->
 	<div class="container-fluid pb-0 mb-0 justify-content-center text-light ">
         <footer class = "pezin">
