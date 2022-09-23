@@ -1,6 +1,6 @@
 <?php
     session_start();
-    require_once ("conexao.php");
+    include ("conexao.php");
 
     $titulo = $_POST['titulo'];
     $descricao = $_POST['descricao'];
@@ -15,4 +15,5 @@
     if($resultado == true){
         header("Location:../area_publicacao.php");
     }
+
 ?>
