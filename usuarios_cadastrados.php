@@ -20,7 +20,7 @@
         <header>
         
         </header>
-        <a href="staff.php">Perfil</a>
+        <a href="perfil.php">Perfil</a>
         <!--css do título-->
         <div class = "centro">
             <article class="z"> 

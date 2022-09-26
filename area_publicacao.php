@@ -12,7 +12,7 @@
         <title>Área de publicação</title>
     </head>
     <body>
-        <a href="staff.php">Perfil</a>
+        <a href="perfil.php">Perfil</a>
         <a href="criar_publicacao.php">Criar uma nova publicação</a>
         <div> 
             <h1>Publicações</h1>

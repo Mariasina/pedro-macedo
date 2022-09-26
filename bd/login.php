@@ -25,7 +25,7 @@
         $_SESSION['nome']   = $dados['nome'];
         $_SESSION['email']  = $dados['email'];
         $_SESSION['perfil'] = $dados['perfil_cod'];
-        header('location:../staff.php');
+        header('location:../perfil.php');
     } 
     //redirecionamento se o usuário for inválido  
     else {
