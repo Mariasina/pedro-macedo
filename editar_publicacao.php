@@ -28,11 +28,13 @@
     <form action="bd/edit_pub.php" method="post">
         <input type="hidden" value="<?=$cod;?>" name="cod">
         <label>Título</label>
-            <input type="text" name="titulo" <?= $publicacao['titulo']?>><br>
+            <input type="text" name="titulo" value="<?= $publicacao['titulo'];?>"><br>
         <label>Imagem</label>
-            <input type="file" name="arquivo" <?= $publicacao['imagem']?>><br>
+            <input type="file" name="arquivo"><br>
         <label>Publicação</label>
             <textarea name="descricao" rows="5" <?= $publicacao['descricao'];?>></textarea><br>
+        <input type="submit" value="Enviar Publicação">
+        
     </form> 
 </body>
 </html>
