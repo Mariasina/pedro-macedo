@@ -8,18 +8,8 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 5%;
 }
-
-body {
-  --light: hsl(220, 50%, 90%);
-  --background: linear-gradient(to right, hsl(210, 30%, 20%), hsl(255, 30%, 25%));
-  --shadow-1: hsla(236, 50%, 50%, .3);
-  --shadow-2: hsla(236, 50%, 50%, .4);
-
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', sans-serif;
-}
-
 a,
 a:link {
   font-family: inherit;
@@ -35,12 +25,12 @@ a:link {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 10px;
   padding: 0 4rem 2rem;
 }
 
 .box:not(:first-child) {
-  height: 45rem;
+  height: 10rem;
 }
 
 /* pop up  */
@@ -55,8 +45,8 @@ a:link {
   justify-content: center;
   align-items: center;
 
-  width: 100%;
-  height: 100%;
+  width: 10%;
+  height: 10%;
 
   /* --m-background é como um estilo em linha  */
   background: var(--m-background);
