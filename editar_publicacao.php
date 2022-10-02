@@ -3,7 +3,7 @@
     include('bd/verifica_login.php');
 
     $cod = $_SESSION['cod'];
-    //$cod = $_GET['cod'];
+    // $cod = $_GET['cod'];
     $sql = "SELECT * FROM publicacao where cod = $cod";
     $result_publicacao = mysqli_query($conexao, $sql);
     $publicacao = mysqli_fetch_array($result_publicacao);
@@ -28,11 +28,11 @@
     <form action="bd/edit_pub.php" method="post">
         <input type="hidden" value="<?=$cod;?>" name="cod">
         <label>Título</label>
-            <input type="text" name="titulo" value="<?= $publicacao['titulo'];?>"><br>
+            <input type="text" name="titulo" value="<?php $publicacao['titulo'];?>"><br>
         <label>Imagem</label>
-            <input type="file" name="arquivo"><br>
+            <input type="file" name="arquivo" ><br>
         <label>Publicação</label>
-            <textarea name="descricao" rows="5" <?= $publicacao['descricao'];?>></textarea><br>
+            <textarea name="descricao" rows="5" <?php $publicacao['descricao'];?>></textarea><br>
         <input type="submit" value="Enviar Publicação">
         
     </form> 

@@ -14,11 +14,11 @@
 </head>
 <body>
     <!--foruláio para cadastro da publicação -->
-    <form action="bd/criar_pub.php" method="post">
+    <form action="bd/criar_pub.php" method="post" enctype="multipart/form-data">
         <label>Título</label>
             <input type="text" name="titulo"><br>
         <label>Imagem</label>
-            <input type="file" name="arquivo"><br>
+            <input type="file" name="imagem"><br>
         <label>Publicação</label>
             <textarea name="descricao" rows="5"></textarea><br> 
         <input type="submit" value="Enviar Publicação">

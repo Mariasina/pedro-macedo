@@ -123,7 +123,7 @@
 <!--/modal 1 -->*/
       ?>
           <button>Editar</button>
-          <button>Excluir</button><hr><br>
+          <button>Inativar</button><hr><br>
 
         <?php
                 }

@@ -1,6 +1,7 @@
 <?php
     session_start();
-    include('bd/verifica_login.php');   
+    include('bd/verifica_login.php'); 
+      
 ?>
 
 <!DOCTYPE html>
@@ -17,7 +18,7 @@
         <div> 
             <h1>Publicações</h1>
             <?php
-                $selecionar = "SELECT * FROM publicacao";
+                $selecionar = "SELECT * FROM publicacao ORDER BY `cod` ASC";
                 $resultado = mysqli_query ($conexao, $selecionar);
             
                 while($row_usuario = mysqli_fetch_assoc($resultado)){
@@ -29,7 +30,7 @@
                 <br><br>
                 <button>Visualizar</button>
                 <button><a href="editar_publicacao.php">Editar</a></button>
-                <button><a href="bd/excluir_pub.php">Excluir</a></button>
+                <button><a href="bd/excluir_pub.php">Inativar</a></button>
                 <hr><br>
             <?php
             ;}
