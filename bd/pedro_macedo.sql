@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 20-Set-2022 às 01:20
+-- Tempo de geração: 04-Out-2022 às 04:48
 -- Versão do servidor: 10.4.24-MariaDB
 -- versão do PHP: 8.1.6
 
@@ -72,8 +72,9 @@ CREATE TABLE `publicacao` (
   `cod` int(11) NOT NULL,
   `titulo` varchar(500) NOT NULL,
   `descricao` varchar(10000) NOT NULL,
-  `imagem` varchar(100) NOT NULL,
+  `imagem` varchar(200) NOT NULL,
   `data` varchar(100) NOT NULL,
+  `hora` varchar(100) NOT NULL,
   `usuario_cod` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -81,8 +82,16 @@ CREATE TABLE `publicacao` (
 -- Extraindo dados da tabela `publicacao`
 --
 
-INSERT INTO `publicacao` (`cod`, `titulo`, `descricao`, `imagem`, `data`, `usuario_cod`) VALUES
-(4, 'tert', 'retew', '', '19/09/2022 20:19', 7);
+INSERT INTO `publicacao` (`cod`, `titulo`, `descricao`, `imagem`, `data`, `hora`, `usuario_cod`) VALUES
+(17, 'u', '7', '../img/uploads/img_633b503228806.png', '03/10/2022', '18:12', 7),
+(18, 'u', '7', '../img/uploads/img_633b51773fcb0.jpg', '03/10/2022', '18:17', 7),
+(19, 'u', '7', '../img/uploads/img_633b519e334a6.png', '03/10/2022', '18:18', 7),
+(20, 'u', '7', '../img/uploads/img_633b53bd3e9f9.jpg', '03/10/2022', '18:27', 7),
+(21, 'u', '7', '../img/uploads/img_633b5647746f0.png', '03/10/2022', '18:38', 7),
+(22, 'u', '7', '../img/uploads/img_633b587e7d9c1.', '03/10/2022', '18:47', 7),
+(23, 'u', '7', '../img/uploads/img_633b588be6010.', '03/10/2022', '18:47', 7),
+(24, 'u', '7', '../img/uploads/img_633b5aa839c60.', '03/10/2022', '18:56', 7),
+(25, 'u', '7', '../img/uploads/img_633b5aaeb27d5.', '03/10/2022', '18:57', 7);
 
 -- --------------------------------------------------------
 
@@ -147,7 +156,7 @@ ALTER TABLE `perfil_usuario`
 -- AUTO_INCREMENT de tabela `publicacao`
 --
 ALTER TABLE `publicacao`
-  MODIFY `cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT de tabela `usuario`
