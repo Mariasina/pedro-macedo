@@ -2,11 +2,17 @@
     session_start();
     include('bd/verifica_login.php');
 
-    $cod = $_SESSION['cod'];
-    // $cod = $_GET['cod'];
-    $sql = "SELECT * FROM publicacao where cod = $cod";
-    $result_publicacao = mysqli_query($conexao, $sql);
-    $publicacao = mysqli_fetch_array($result_publicacao);
+    $query = $conexao->prepare("SELECT * FROM publicacao ORDER BY cod DESC");
+    $query->execute();
+    $get = $query->get_result();
+    $cod = $_GET['cod'];
+
+    // $sql = "SELECT * FROM publicacao";
+    // $cod = $_SESSION['cod'];
+    // //$cod = $_GET['cod'];
+    // $sql2 = "SELECT * FROM publicacao where cod = '$cod'";
+    // $result_publicacao = mysqli_query($conexao, $sql2);
+    // $publicacao = mysqli_fetch_array($result_publicacao);
 
     // $explode = explode('/', $url);
     // $cod_pub = addslashes($explode['1']);
@@ -22,7 +28,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Editar</title>
 </head>
 <body>
     <form action="bd/edit_pub.php" method="post">

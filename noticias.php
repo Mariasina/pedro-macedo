@@ -137,14 +137,15 @@ crossorigin="anonymous">
 		$resultado = mysqli_query ($conexao, $selecionar);
 				
 		while($row_usuario = mysqli_fetch_assoc($resultado)){
-
-		echo "<hr><h3>" . $row_usuario['titulo'] . "</h3>";
-		echo "" . $row_usuario['descricao'] . "<br>"; 
-		echo "" . $row_usuario['data'] ;
+			echo "<hr><h3>" . $row_usuario['titulo'] . "</h3>";
+			echo "" . $row_usuario['descricao'] . "<br>"; 
+			echo "<img src = '/img/'>" . $row_usuario['imagem'] . "<br>";
+			echo "" . $row_usuario['data'] . " - " ;
+			echo "" . $row_usuario['hora'];
 	?>
 		<br><br>
 	<?php
-		if($_SESSION['perfil'] == 1 ){
+		if($_SESSION['cod']){
 	?>
 	
 		<button>Visualizar</button>

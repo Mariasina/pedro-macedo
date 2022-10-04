@@ -18,18 +18,21 @@
         <div> 
             <h1>Publicações</h1>
             <?php
-                $selecionar = "SELECT * FROM publicacao ORDER BY `cod` ASC";
+                $selecionar = "SELECT * FROM publicacao ORDER BY cod DESC";
                 $resultado = mysqli_query ($conexao, $selecionar);
             
                 while($row_usuario = mysqli_fetch_assoc($resultado)){
 
                 echo "<hr><h3>" . $row_usuario['titulo'] . "</h3>";
                 echo "" . $row_usuario['descricao'] . "<br>"; 
-                echo "" . $row_usuario['data'] 
+                echo "<img src = '/img/'>" . $row_usuario['imagem'] . "<br>";
+                echo "" . $row_usuario['data'] . " - " ;
+                echo "" . $row_usuario['hora'];
+                
             ?>
                 <br><br>
-                <button>Visualizar</button>
-                <button><a href="editar_publicacao.php">Editar</a></button>
+                <button><a href="vizualizar_publicacao.php">Visualizar</a></button>
+                <button><a href="editar_publicacao?codp=<?php echo $row_usuario['cod'];?>">Editar</a></button>
                 <button><a href="bd/excluir_pub.php">Inativar</a></button>
                 <hr><br>
             <?php
