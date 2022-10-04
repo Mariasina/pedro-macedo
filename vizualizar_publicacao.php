@@ -11,18 +11,22 @@
     <title>Publicação</title>
 </head>
 <body>
-<?php 
-    if(isset($_GET['cod'])):
-    endif;
-    
+    <?php 
+
+        $query = $conexao->prepare("SELECT * FROM publicacao ORDER BY cod DESC");
+        $query->execute();
+        $get = $query->get_result();
+        $publicacao = $get->fetch_array();
         $cod = $_GET['cod'];
-        $sql = "SELECT * FROM publicacao where cod = '$cod' ";
-        $result_publicacao = mysqli_query($conexao, $sql);
-        $publicacao = mysqli_fetch_array($result_publicacao);
-
-        echo $cod;
-
     
     ?>
+    <div>
+        <h1><?php echo $publicacao['titulo'];"</h1>"
+        echo $publicacao['descricao'] . "<br>";
+        echo $publicacao['imagem'] . "<br>";
+        echo $publicacao['data'] . " - ";
+        echo $publicacao['hora'];
+        ?>
+    </div>
 </body>
 </html>

@@ -31,9 +31,9 @@
                 
             ?>
                 <br><br>
-                <button><a href="vizualizar_publicacao.php">Visualizar</a></button>
-                <button><a href="editar_publicacao?codp=<?php echo $row_usuario['cod'];?>">Editar</a></button>
-                <button><a href="bd/excluir_pub.php">Inativar</a></button>
+                <button><a href="vizualizar_publicacao.php?cod=<?php echo $row_usuario['cod'];?>">Visualizar</a></button>
+                <button><a href="editar_publicacao.php?cod=<?php echo $row_usuario['cod'];?>">Editar</a></button>
+                <button><a href="bd/excluir_pub.php?cod=">Inativar</a></button>
                 <hr><br>
             <?php
             ;}

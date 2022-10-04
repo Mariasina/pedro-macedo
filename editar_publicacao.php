@@ -2,10 +2,12 @@
     session_start();
     include('bd/verifica_login.php');
 
-    $query = $conexao->prepare("SELECT * FROM publicacao ORDER BY cod DESC");
+    $cod = $_GET['cod'];
+    $query = $conexao->prepare("SELECT * FROM publicacao WHERE cod = ?");
+    $query->bind_param('s', $cod);
     $query->execute();
     $get = $query->get_result();
-    $cod = $_GET['cod'];
+    $publicacao = $get->fetch_assoc();  
 
     // $sql = "SELECT * FROM publicacao";
     // $cod = $_SESSION['cod'];
@@ -34,9 +36,9 @@
     <form action="bd/edit_pub.php" method="post">
         <input type="hidden" value="<?=$cod;?>" name="cod">
         <label>Título</label>
-            <input type="text" name="titulo" value="<?php $publicacao['titulo'];?>"><br>
+            <input type="text" name="titulo" value="<?php  $publicacao['titulo'];?>"><br>
         <label>Imagem</label>
-            <input type="file" name="arquivo" ><br>
+            <input type="file" name="imagem" ><br>
         <label>Publicação</label>
             <textarea name="descricao" rows="5" <?php $publicacao['descricao'];?>></textarea><br>
         <input type="submit" value="Enviar Publicação">

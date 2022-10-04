@@ -12,6 +12,8 @@
     //$data = $_POST['data'];
     $usuario_cod = $_SESSION['cod'];
 
+
+
     /*if($imagem != NULL) {
         $nomeFinal = time().'.jpg';
         if (move_uploaded_file($imagem['tmp_name'], $nomeFinal)) {
