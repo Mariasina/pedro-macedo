@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 04-Out-2022 às 04:48
+-- Tempo de geração: 05-Out-2022 às 16:27
 -- Versão do servidor: 10.4.24-MariaDB
 -- versão do PHP: 8.1.6
 
@@ -83,15 +83,15 @@ CREATE TABLE `publicacao` (
 --
 
 INSERT INTO `publicacao` (`cod`, `titulo`, `descricao`, `imagem`, `data`, `hora`, `usuario_cod`) VALUES
-(17, 'u', '7', '../img/uploads/img_633b503228806.png', '03/10/2022', '18:12', 7),
-(18, 'u', '7', '../img/uploads/img_633b51773fcb0.jpg', '03/10/2022', '18:17', 7),
-(19, 'u', '7', '../img/uploads/img_633b519e334a6.png', '03/10/2022', '18:18', 7),
-(20, 'u', '7', '../img/uploads/img_633b53bd3e9f9.jpg', '03/10/2022', '18:27', 7),
-(21, 'u', '7', '../img/uploads/img_633b5647746f0.png', '03/10/2022', '18:38', 7),
-(22, 'u', '7', '../img/uploads/img_633b587e7d9c1.', '03/10/2022', '18:47', 7),
-(23, 'u', '7', '../img/uploads/img_633b588be6010.', '03/10/2022', '18:47', 7),
-(24, 'u', '7', '../img/uploads/img_633b5aa839c60.', '03/10/2022', '18:56', 7),
-(25, 'u', '7', '../img/uploads/img_633b5aaeb27d5.', '03/10/2022', '18:57', 7);
+(20, 'fihu', 'lka', '../img/uploads/img_633b53bd3e9f9.jpg', '03/10/2022', '18:27', 7),
+(21, 'fihu', 'lka', '../img/uploads/img_633b5647746f0.png', '03/10/2022', '18:38', 7),
+(27, 'fihu', 'lka', '../img/uploads/img_633c334cd4fca.png', '04/10/2022', '10:21', 7),
+(32, 'fihu', 'lka', '', '05/10/2022', '08:15', 7),
+(33, 'fihu', 'lka', '../img/uploads/img_633d678922e78.png', '05/10/2022', '08:16', 7),
+(34, 'fihu', 'lkalo', '../img/uploads/img_633d67d14f810.png', '05/10/2022', '08:17', 7),
+(35, 'fihu', 'lka', '', '05/10/2022', '08:17', 7),
+(36, 'fihu', 'lkaffvvvvvv', '', '05/10/2022', '08:27', 7),
+(37, 'tui', 'ppp', '../img/uploads/img_633d86522cd00.png', '05/10/2022', '10:27', 7);
 
 -- --------------------------------------------------------
 
@@ -156,7 +156,7 @@ ALTER TABLE `perfil_usuario`
 -- AUTO_INCREMENT de tabela `publicacao`
 --
 ALTER TABLE `publicacao`
-  MODIFY `cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT de tabela `usuario`
