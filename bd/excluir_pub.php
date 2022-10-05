@@ -4,7 +4,7 @@
         
     $cod = $_GET['cod'];
 
-    $sql = "DELETE FROM publicacao WHERE cod = '$cod' ";
+    $sql = "DELETE FROM publicacao WHERE cod = $cod ";
 
     $resultado = mysqli_query($conexao, $sql);
 

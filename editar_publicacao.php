@@ -33,7 +33,7 @@
     <title>Editar</title>
 </head>
 <body>
-    <form action="bd/edit_pub.php" method="post">
+    <form action="edit_pub.php" method="post">
         <input type="hidden" value="<?=$cod;?>" name="cod">
         <label>Título</label>
             <input type="text" name="titulo" value="<?php echo $publicacao['titulo'];?>"><br>
@@ -41,8 +41,10 @@
             <input type="file" name="imagem" ><br>
         <label>Publicação</label>
             <textarea name="descricao" rows="5" ><?php echo $publicacao['descricao'];?></textarea><br>
-        <input type="submit" value="Enviar Publicação">
+        <input type="submit" value="Enviar Publicação" name="env">
         
     </form> 
+
+    
 </body>
 </html>
