@@ -21,9 +21,9 @@
     
     ?>
     <div>
-        <h1><?php echo $publicacao['titulo'];"</h1>"
-        echo $publicacao['descricao'] . "<br>";
-        echo $publicacao['imagem'] . "<br>";
+        <h1><?php echo $publicacao['titulo'];?></h1>
+        <?php echo $publicacao['descricao'] . "<br>";
+        echo "<img src = '/img/uploads'>" . $publicacao['imagem'] . "<br>";
         echo $publicacao['data'] . " - ";
         echo $publicacao['hora'];
         ?>

@@ -25,7 +25,9 @@
 
                 echo "<hr><h3>" . $row_usuario['titulo'] . "</h3>";
                 echo "" . $row_usuario['descricao'] . "<br>"; 
-                echo "<img src = '/img/'>" . $row_usuario['imagem'] . "<br>";
+                if  ((isset($row_usuario['imagem'])) &&  (!empty($row_usuario['imagem']))){
+                echo?> <img src= <?php.$_FILES['imagem']?>><br>;<?php            
+                }
                 echo "" . $row_usuario['data'] . " - " ;
                 echo "" . $row_usuario['hora'];
                 
