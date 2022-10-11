@@ -1,0 +1,12 @@
+.teste {
+     border: 43px solid #ceebfb;
+     border-radius: 20%;
+     margin: 40px;
+     padding: 43px;
+}
+.titulo {
+    border-bottom: 31px solid #ceebfb;
+    position: relative;
+    width: 110%;
+    right: 4%;
+}
