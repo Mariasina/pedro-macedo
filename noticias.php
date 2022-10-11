@@ -1,6 +1,7 @@
 <?php
     session_start();
     include('bd/conexao.php');  
+	
 ?>
 
 <!DOCTYPE html>
@@ -139,9 +140,12 @@ crossorigin="anonymous">
 		while($row_usuario = mysqli_fetch_assoc($resultado)){
 			echo "<hr><h3>" . $row_usuario['titulo'] . "</h3>";
 			echo "" . $row_usuario['descricao'] . "<br>"; 
-			echo "<img src = '/img/'>" . $row_usuario['imagem'] . "<br>";
+			if  ((isset($row_usuario['imagem'])) &&  (!empty($row_usuario['imagem']))){ ?>
+                <img src="pedro_macedo/<?php echo $row_usuario['imagem']; ?>"/><br>        
+            <?php
 			echo "" . $row_usuario['data'] . " - " ;
 			echo "" . $row_usuario['hora'];
+			}
 	?>
 		<br><br>
 	<?php
