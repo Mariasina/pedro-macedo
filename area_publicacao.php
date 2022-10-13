@@ -1,6 +1,7 @@
 <?php
     session_start();
-    include('bd/verifica_login.php');   
+    include('bd/verifica_login.php'); 
+      
 ?>
 
 <!DOCTYPE html>
@@ -12,24 +13,30 @@
         <title>Área de publicação</title>
     </head>
     <body>
-        <a href="staff.php">Perfil</a>
+        <a href="perfil.php">Perfil</a>
         <a href="criar_publicacao.php">Criar uma nova publicação</a>
         <div> 
             <h1>Publicações</h1>
             <?php
-                $selecionar = "SELECT * FROM publicacao";
+                $selecionar = "SELECT * FROM publicacao ORDER BY cod DESC";
                 $resultado = mysqli_query ($conexao, $selecionar);
             
                 while($row_usuario = mysqli_fetch_assoc($resultado)){
 
                 echo "<hr><h3>" . $row_usuario['titulo'] . "</h3>";
                 echo "" . $row_usuario['descricao'] . "<br>"; 
-                echo "" . $row_usuario['data'] 
+                if  ((isset($row_usuario['imagem'])) &&  (!empty($row_usuario['imagem']))){ ?>
+                <img src="pedro_macedo/<?php echo $row_usuario['imagem']; ?>"/><br>        
+                <?php
+                }
+                echo "" . $row_usuario['data'] . " - " ;
+                echo "" . $row_usuario['hora'];
+                
             ?>
                 <br><br>
-                <button>Visualizar</button>
-                <button><a href="editar_publicacao.php">Editar</a></button>
-                <button><a href="bd/excluir_pub.php">Excluir</a></button>
+                <button><a href="vizualizar_publicacao.php?cod=<?php echo $row_usuario['cod'];?>">Visualizar</a></button>
+                <button><a href="editar_publicacao.php?cod=<?php echo $row_usuario['cod'];?>">Editar</a></button>
+                <button><a href="bd/excluir_pub.php?cod=">Inativar</a></button>
                 <hr><br>
             <?php
             ;}

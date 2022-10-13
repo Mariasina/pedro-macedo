@@ -11,16 +11,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
             <link rel = "stylesheet" href = "css/relatorio.css">
-            <!--<link rel = "stylesheet" href = "css/popups.css">-->
-            <script src="js/popups.js"></script>
+     
+            
         
         <title>Usuários Cadastrados</title>
+        
     </head>
     <body>
         <header>
         
         </header>
-        <a href="staff.php">Perfil</a>
+        <a href="perfil.php">Perfil</a>
         <!--css do título-->
         <div class = "centro">
             <article class="z"> 
@@ -120,9 +121,9 @@
   </div>
 </div>
 <!--/modal 1 -->*/
-        ?>
+      ?>
           <button>Editar</button>
-          <button>Excluir</button><hr><br>
+          <button>Inativar</button><hr><br>
 
         <?php
                 }

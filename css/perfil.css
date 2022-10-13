@@ -1,0 +1,35 @@
+.cor {
+    background-color: #ceebfb;
+}
+#menu-h {
+    list-style-type: none;
+    padding: 0;
+    background-color: #ceebfb;
+}
+#menu-h li {
+    display: inline;
+}
+#menu-h li a {
+    color: black;
+    display: inline;
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    transition: background .6s;
+}
+header ul li a:hover {
+    background-color: #4a9ae9;
+    
+}
+li{
+    position: relative;
+    left: 32%;
+}
+.corpo {
+    background-color: #ceebfb;
+	width: 40%;
+	border-radius: 20%;
+    padding: 3%;
+    left: 30%;
+    position: relative;
+}
