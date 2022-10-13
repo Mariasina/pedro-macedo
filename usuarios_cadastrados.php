@@ -55,72 +55,7 @@
             
                 //Todos os "if perfil 1" mostram informações que apenas o administrador vê.
                 if($_SESSION['perfil'] == 1){
-/*<!-- botao pop up-->
-<div class="box">
-  <!-- mudar o que esta escrito no botao -->
-  <a href="#m1-o" class="link-1" id="m1-c">
-    editar
-  </a>
-  
-  <!-- Container para abrir o pop up -->
-  <div class="modal-container" id="m1-o" style="--m-background: transparent;">
-    
-    <!--entra dentro do pop up -->
-    
-    <div class="modal">
-      
-      <!-- Titulo pop up -->
-      
-      <h1 class="modal__title">
-        Excluir sla oq
-      </h1>
-      
-      <!-- Texto sobre o que se trata o pop up  -->
-      
-      <p class="modal__text">
-        visualizar o que voce quiser que apareça aqui, por sua conta maria
-      </p>
-      <!-- botao de X/sair -->
-      <a href="#m1-c" class="link-2"></a>
-    </div>
-  </div>
-</div>
-<!-- /modal 1 -->
 
-
-
-
-<!-- botao pop up-->
-<div class="box">
-  <!-- mudar o que esta escrito no botao -->
-  <a href="#m1-o" class="link-1" id="m1-c">
-    excluir
-  </a>
-  
-  <!-- Container para abrir o pop up -->
-  <div class="modal-container" id="m1-o" style="--m-background: transparent;">
-    
-    <!--entra dentro do pop up -->
-    
-    <div class="modal">
-      
-      <!-- Titulo pop up -->
-      
-      <h1 class="modal__title">
-        Excluir sla oq
-      </h1>
-      
-      <!-- Texto sobre o que se trata o pop up  -->
-      
-      <p class="modal__text">
-        visualizar o que voce quiser que apareça aqui, por sua conta maria
-      </p>
-      <!-- botao de X/sair -->
-      <a href="#m1-c" class="link-2"></a>
-    </div>
-  </div>
-</div>
-<!--/modal 1 -->*/
       ?>
           <button>Editar</button>
           <button>Inativar</button><hr><br>
