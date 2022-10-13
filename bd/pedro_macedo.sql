@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 20-Set-2022 às 01:20
+-- Tempo de geração: 21-Set-2022 às 05:17
 -- Versão do servidor: 10.4.24-MariaDB
 -- versão do PHP: 8.1.6
 
@@ -82,7 +82,9 @@ CREATE TABLE `publicacao` (
 --
 
 INSERT INTO `publicacao` (`cod`, `titulo`, `descricao`, `imagem`, `data`, `usuario_cod`) VALUES
-(4, 'tert', 'retew', '', '19/09/2022 20:19', 7);
+(4, 'tert', 'retew', '', '19/09/2022 20:19', 7),
+(5, 'Estudos', 'descricao', '', '20/09/2022 23:18', 7),
+(6, 'teste', 'oi', '', '23/09/2022 23:19', 7);
 
 -- --------------------------------------------------------
 
@@ -147,7 +149,7 @@ ALTER TABLE `perfil_usuario`
 -- AUTO_INCREMENT de tabela `publicacao`
 --
 ALTER TABLE `publicacao`
-  MODIFY `cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de tabela `usuario`
