@@ -70,14 +70,14 @@
             <div class = "pub">
             <?php
 
-                echo "<hr><h3>" . $row_usuario['titulo'] . "</h3>"; ?>
+                echo "<h3>" . $row_usuario['titulo'] . "</h3><hr>"; ?>
                 <div class = "descricao">
                 <?php 
                 echo "" . $row_usuario['descricao']; ?>
                 </div>
                 <?php
                 if  ((isset($row_usuario['imagem'])) &&  (!empty($row_usuario['imagem']))){ ?>
-                <img src="pedro_macedo/<?php echo $row_usuario['imagem']; ?>"/>        
+                <img src="pedro_macedo/<?php echo $row_usuario['imagem']; }?>">       
             
                     <br/>
                     <div class = "acoes">
@@ -93,7 +93,7 @@
                     </div>
                     <div class = "hora">
                 <?php
-                }
+                    
                 echo "" . $row_usuario['data'] . " - " ;
                 echo "" . $row_usuario['hora'];
                 

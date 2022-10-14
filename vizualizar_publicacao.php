@@ -13,17 +13,20 @@
 <body>
     <?php 
 
-        $query = $conexao->prepare("SELECT * FROM publicacao ORDER BY cod DESC");
+        $cod = $_GET['cod'];
+        $query = $conexao->prepare("SELECT * FROM publicacao WHERE cod = ?");
+        $query->bind_param('s', $cod);
         $query->execute();
         $get = $query->get_result();
-        $publicacao = $get->fetch_array();
-        $cod = $_GET['cod'];
+        $publicacao = $get->fetch_assoc();
     
     ?>
     <div>
         <h1><?php echo $publicacao['titulo'];?></h1>
         <?php echo $publicacao['descricao'] . "<br>";
-        echo "<img src = '/img/uploads'>" . $publicacao['imagem'] . "<br>";
+        if  ((isset($publicacao['imagem'])) &&  (!empty($publicacao['imagem']))){ ?>
+            <img src="pedro_macedo/<?php echo $publicacao['imagem'];} ?>"/><br>
+        <?php
         echo $publicacao['data'] . " - ";
         echo $publicacao['hora'];
         ?>
