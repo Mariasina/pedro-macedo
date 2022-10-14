@@ -25,33 +25,3 @@ li{
     position: relative;
     left: 25%;
 }
-.button {
-    position: relative;
-    left: 85%;
-}
-.corpo {
-    padding-left: 7%;
-    width: 100%;
-    height: 50%;
-}
-.pub {
-    border: 43px solid #ceebfb;
-    border-radius: 20%;
-    padding: 80px;
-    margin: 40px;
-}
-img {
-    width: 400px;
-    border-radius: 4%;
-}
-.descricao {
-    text-align: center;
-}
-.acoes {
-    position: relative;
-    left: 47%;
-}
-.hora {
-    position: relative;
-    left: 90%;
-}

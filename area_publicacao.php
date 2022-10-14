@@ -36,8 +36,11 @@
         <?php }?>
         <!--Links-->
             <li>
-                <a href="index.html">Página inicial</a>
+                <a href = "perfil.php"> Perfil </a>
             </li>
+            <li>
+                <a href="index.html">Página inicial</a>
+            </li\>
             <li>
                 <a href="area_publicacao.php">Área de publicação</a>
             </li>
@@ -68,9 +71,11 @@
             
                 while($row_usuario = mysqli_fetch_assoc($resultado)){ ?>
             <div class = "pub">
+            <div class = "descricao">
             <?php
 
-                echo "<h3>" . $row_usuario['titulo'] . "</h3><hr>"; ?>
+                echo "<h3>" . $row_usuario['titulo'] . "</h3>"; ?>
+            </div>
                 <div class = "descricao">
                 <?php 
                 echo "" . $row_usuario['descricao']; ?>
