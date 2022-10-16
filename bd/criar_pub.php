@@ -9,28 +9,7 @@
     //criando as variáves para criar uma postagem
     $titulo = $_POST['titulo'];
     $descricao = $_POST['descricao'];
-    //$data = $_POST['data'];
     $usuario_cod = $_SESSION['cod'];
-
-
-
-    /*if($imagem != NULL) {
-        $nomeFinal = time().'.jpg';
-        if (move_uploaded_file($imagem['tmp_name'], $nomeFinal)) {
-            $tamanhoImg = filesize($nomeFinal);
-    
-            $mysqlImg = addslashes(fread(fopen($nomeFinal, "r"), $tamanhoImg));
-    
-
-    
-            mysql_query("INSERT INTO publicacao (imagem) VALUES ('$mysqlImg')") or
-            die("O sistema não foi capaz de executar a query");
-    
-            unlink($nomeFinal);
-    
-            header("location:../area_publicacao.php");
-        }
-    }*/
 
     $uploaddir = '../img/uploads/';		
     $uploaddirN = 'img/uploads/';
@@ -48,6 +27,7 @@
             ('$titulo', '$descricao', '$uploadfileN', '$data',  '$hora', '$usuario_cod')";
     
     echo $sql;
+    //variável para concluiro cadastro
     $resultado = mysqli_query($conexao, $sql);
 
     //redirecionamento se publicação for cadstrada com sucesso

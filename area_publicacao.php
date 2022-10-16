@@ -66,9 +66,12 @@
         <div class = "corpo"> 
             <h1>Publicações</h1>
             <?php  
+                //pega as informações do bd
                 $selecionar = "SELECT * FROM publicacao ORDER BY cod DESC";
+                //cria uma variavel para pegar as informações
                 $resultado = mysqli_query ($conexao, $selecionar);
-            
+                
+                //variável para mostrar as informações se elas forem pegas com sucesso
                 while($row_usuario = mysqli_fetch_assoc($resultado)){ ?>
             <div class = "pub">
             <div class = "descricao">
@@ -82,10 +85,12 @@
                 </div>
                 <?php
                 if  ((isset($row_usuario['imagem'])) &&  (!empty($row_usuario['imagem']))){ ?>
-                <img src="pedro_macedo/<?php echo $row_usuario['imagem']; }?>">       
+                <img src="pedro_macedo/<?php echo $row_usuario['imagem']; } ?>  ">    
             
                     <br/>
+                    <!--botões-->
                     <div class = "acoes">
+                    <!--php para criar o cod da pub na url-->
                     <a href="vizualizar_publicacao.php?cod=<?php echo $row_usuario['cod'];?>" class = "w-10 btn btn-lg btn-primary rounded-5">
                         Visualizar
                     </a>

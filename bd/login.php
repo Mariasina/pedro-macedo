@@ -33,7 +33,7 @@
         unset ($_SESSION['senha']);
         echo $login;
         echo $senha;*/
-        header('Location:../login.html');
+        header('Location:login.html');
     exit();
     }
 

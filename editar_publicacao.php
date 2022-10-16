@@ -2,6 +2,7 @@
     session_start();
     include('bd/verifica_login.php');
 
+    //variáveis para mostrar as informações e edita-las
     $cod = $_GET['cod'];
     $query = $conexao->prepare("SELECT * FROM publicacao WHERE cod = ?");
     $query->bind_param('s', $cod);
