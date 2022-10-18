@@ -9,7 +9,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Painel do Administrador</title>
+        <title>Perfil</title>
         <link rel = "stylesheet" href = "css/perfil.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -63,17 +63,14 @@
       Perfil
     </h2>
     <div class="form-floating">
-      Nome:  <?php echo $_SESSION['nome'];?> 
-      <input type="email" name="email" class="form-control w-100" id="floatingInput" placeholder="name@example.com">
+      <b>Nome: </b> <?php echo $_SESSION['nome'];?> <br>
+      <!--<input type="email" name="email" class="form-control w-100" id="floatingInput" placeholder="name@example.com">-->
       <label for="floatingInput" class="l1">
-        Email: <?php echo $_SESSION['email'];?>
+        <b>Email: </b><?php echo $_SESSION['email'];?>
       </label>
     </div>
     <div class="form-floating">
-      <input type="password" name="senha" class="form-control w-100" id="floatingPassword" placeholder="Password">
-      <label for="floatingPassword" class="l1">
-        Senha:
-      </label>
+      <!-- <input type="password" name="senha" class="form-control w-100" id="floatingPassword" placeholder="Password"> -->
     </div><br>
     <button class="w-50 btn btn-lg btn-primary" type="submit">
       Editar

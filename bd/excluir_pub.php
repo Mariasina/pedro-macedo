@@ -1,7 +1,8 @@
 <?php
     session_start();
-    include ("conexao.php");
-        
+    include("conexao.php");
+      
+    if (isset($_POST['env'])){
     $cod = $_GET['cod'];
 
     $sql = "DELETE FROM publicacao WHERE cod = $cod ";

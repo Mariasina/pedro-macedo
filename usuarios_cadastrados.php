@@ -80,8 +80,8 @@
     <!--Mostra todos os usuários cadastrados e suas informações-->
     <div class="d">   
     <?php   
-        echo "<b>Nome:</b>" . $row_usuario['nome'] . "<br>";
-        echo "<b>E-mail:</b>" . $row_usuario['email'] . "<br><br>"; 
+        echo "<b>Nome: </b>" . $row_usuario['nome'] . "<br>";
+        echo "<b>E-mail: </b>" . $row_usuario['email'] . "<br><br>"; 
 
     //Todos os "if perfil 1" mostram informações que apenas o administrador vê.
         if($_SESSION['perfil'] == 1){
