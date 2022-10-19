@@ -34,7 +34,7 @@
     <title>Editar</title>
 </head>
 <body>
-    <form action="edit_pub.php" method="post">
+    <form action="bd/edit_pub.php?cod=<?php echo $cod;?>" method="post">
         <input type="hidden" value="<?=$cod;?>" name="cod">
         <label>Título</label>
             <input type="text" name="titulo" value="<?php echo $publicacao['titulo'];?>"><br>

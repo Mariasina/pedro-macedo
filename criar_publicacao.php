@@ -32,7 +32,7 @@
                 <input class="form-control" type="file" name="imagem" id="formFile"><br>
             <label class = "pub"></label>
                     <textarea class = "form-control form-control-lg" name="descricao" rows="5" placeholder="Descrição..."></textarea><br><br/>
-                <input class="btn btn-primary" value="Enviar Publicação" type = "submit">
+                <input class="btn btn-primary" value="Enviar Publicação" type = "submit" name="env">
         </form>
     </div>
 </body>
