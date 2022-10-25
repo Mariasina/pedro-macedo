@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 14-Out-2022 às 01:11
+-- Tempo de geração: 25-Out-2022 às 15:49
 -- Versão do servidor: 10.4.24-MariaDB
--- versão do PHP: 7.4.29
+-- versão do PHP: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -86,14 +86,13 @@ INSERT INTO `publicacao` (`cod`, `titulo`, `descricao`, `imagem`, `data`, `hora`
 (20, 'fihu', 'lka', '../img/uploads/img_633b53bd3e9f9.jpg', '03/10/2022', '18:27', 7),
 (21, 'fihu', 'lka', '../img/uploads/img_633b5647746f0.png', '03/10/2022', '18:38', 7),
 (27, 'fihu', 'lka', '../img/uploads/img_633c334cd4fca.png', '04/10/2022', '10:21', 7),
-(32, 'fihu', 'lka', '', '05/10/2022', '08:15', 7),
 (33, 'fihu', 'lka', '../img/uploads/img_633d678922e78.png', '05/10/2022', '08:16', 7),
 (34, 'fihu', 'lkalo', '../img/uploads/img_633d67d14f810.png', '05/10/2022', '08:17', 7),
-(35, 'fihu', 'lka', '', '05/10/2022', '08:17', 7),
-(36, 'fihu', 'lkaffvvvvvv', '', '05/10/2022', '08:27', 7),
 (37, 'tui', 'ppp', '../img/uploads/img_633d86522cd00.png', '05/10/2022', '10:27', 7),
 (38, 'teste de sauhaush', 'mixuruca esse layout em amigos', '../img/uploads/img_6345e14c473f9.jpg', '11/10/2022', '18:34', 7),
-(39, 'rafael boilon', 'meu trablho', '../img/uploads/img_6345e68d259db.png', '11/10/2022', '18:56', 7);
+(40, 'muito bom', 'adorei eee', '../img/uploads/img_6357c525da60e.jpg', '25/10/2022', '08:14', 7),
+(41, 'legal', 'sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus ', '', '25/10/2022', '09:55', 7),
+(42, 'legal sim', 'sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus ', '../img/uploads/img_6357dce634899.jpg', '25/10/2022', '09:56', 7);
 
 -- --------------------------------------------------------
 
@@ -159,7 +158,7 @@ ALTER TABLE `perfil_usuario`
 -- AUTO_INCREMENT de tabela `publicacao`
 --
 ALTER TABLE `publicacao`
-  MODIFY `cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
 -- AUTO_INCREMENT de tabela `usuario`
