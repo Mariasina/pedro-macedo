@@ -11,7 +11,6 @@
 		Colégio Estadual Pedro Macedo 
 	</title>
 	
-	<link rel = "stylesheet" href = "css/perfil.css">
 	<link rel="stylesheet"  href="css/indexcolegio.css">
 
 	<!-- Linkando css e js com Bootstrap -->
