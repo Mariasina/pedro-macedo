@@ -10,7 +10,8 @@
 	<title>
 		Colégio Estadual Pedro Macedo 
 	</title>
-
+	
+	<link rel = "stylesheet" href = "css/perfil.css">
 	<link rel="stylesheet"  href="css/indexcolegio.css">
 
 	<!-- Linkando css e js com Bootstrap -->
@@ -72,7 +73,7 @@ crossorigin="anonymous">
         </ul>
     </nav>
     </header> 
-    </div> <br/> <br/> <br/>
+    </div> <br/>
 	<?php } ?>
 <!--Fim painel de edição-->
 	
@@ -170,10 +171,10 @@ crossorigin="anonymous">
 				</svg>
 			</a>
 			<ul>
-				<li><a href="direcao.html">Direção</a></li>
+				<li><a href="direcao.php">Direção</a></li>
 				<li><a href="secretaria.html">Secretaria</a></li>
-				<li><a href="equipemultidisciplinar.html">Equipe Multidisciplinar</a></li>
-				<li><a href="espacodoprofessor.html">Espaço do Professor</a></li>
+				<li><a href="equipemultidisciplinar.php">Equipe Multidisciplinar</a></li>
+				<li><a href="espacodoprofessor.php">Espaço do Professor</a></li>
 			</ul>
 		</li>
 		<!-- dropdown fotos -->
@@ -187,8 +188,8 @@ crossorigin="anonymous">
 			<ul>
 				<li><a href="colegio.php">Colégio</a></li>
 				<li><a href="professores.html">Professores</a></li>
-				<li><a href="eventos.html">Eventos</a></li>
-				<li><a href="cursos.html">Cursos</a></li>
+				<li><a href="eventos.php">Eventos</a></li>
+				<li><a href="cursos.php">Cursos</a></li>
 			</ul>
 		</li>
 		<!-- dropdown outros -->

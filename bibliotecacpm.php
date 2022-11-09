@@ -89,10 +89,10 @@ crossorigin="anonymous">
 				</svg>
 			</a>
 			<ul>
-				<li><a href="direcao.html">Direção</a></li>
+				<li><a href="direcao.php">Direção</a></li>
 				<li><a href="secretaria.html">Secretaria</a></li>
-				<li><a href="equipemultidisciplinar.html">Equipe Multidisciplinar</a></li>
-				<li><a href="espacodoprofessor.html">Espaço do Professor</a></li>
+				<li><a href="equipemultidisciplinar.php">Equipe Multidisciplinar</a></li>
+				<li><a href="espacodoprofessor.php">Espaço do Professor</a></li>
 			</ul>
 		</li>
 		<li>
@@ -106,7 +106,7 @@ crossorigin="anonymous">
 				<li><a href="colegio.php">Colégio</a></li>
 				<li><a href="professores.html">Professores</a></li>
 				<li><a href="eventos.html">Eventos</a></li>
-				<li><a href="cursos.html">Cursos</a></li>
+				<li><a href="cursos.php">Cursos</a></li>
 			</ul>
 		</li>
 		<li>
