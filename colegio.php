@@ -2,12 +2,11 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="UTF-8">
-	<title>
-		Colégio Estadual Pedro Macedo 
-	</title>
-
-	<link rel="stylesheet"  href="css/indexcolegio.css">
-
+        <title>
+           Fotos - Colégio Pedro Macedo
+        </title>
+        <link rel="stylesheet" href="css/todaspagcolegio.css">
+        
 	<!-- Linkando css e js com Bootstrap -->
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
@@ -18,74 +17,48 @@ crossorigin="anonymous">
  integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 
  crossorigin="anonymous"> </script>
 
-	<!-- Fim do link do bootstrap -->
+    <!-- Fim do link do bootstrap -->
+    </head>
+    <body>
+ <!-- Começo Cabeçalho Duplo -->
 
-</head>
-
-<body>
-	
-	<!-- Começo Cabeçalho Duplo -->
-
-<!-- primeiro cabeçalho -->
 <div class = "cabeça">
-
-	<!-- cor do primeiro cabeçalho-->
-	<!-- Explicação das siglas: p = padding y = top, bottom 2 = padding para $spacer *.5 ou 1rem = tamanho de fonte do elemento raiz
-	usado bastante para a acessibilidade de sites bg = background light = claro border-bottom = define as 
-	propriedades da borda de baixo ao mesmo tempo que define a expessura e a cor da borda. -->
-
-  <nav class="py-2 bg-light border-bottom">
-
-    <div class="container d-flex flex-wrap">
-      <ul class="nav me-auto">
-		<div class="logocentro">
-		<!-- logo e link da educação paraná-->
-        <li class="nav-item"><a href= "https://www.educacao.pr.gov.br/desvio.html" class="nav-link link-dark px-2 active" aria-current="page">
-			<img src = "img/logopres.jfif" class = "prlogo">
-		</a></li>
-		</div>
-      </ul>
-	 </div>
-  </nav>
-  <!-- segundo cabeçalho-->
-	<header class="py-3 mb-4 border-bottom" >
-		<!-- alinhando imagens-->
-		<div class="container d-flex flex-wrap justify-content-center">
-		  <a href="index.html" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
-			<svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-			<!-- logo pedro macedo e links-->
-			<img src = "img/pedromacedo.png" alt = "logo do colégio" class = "logo">
-			<!-- tamanho -->
-			<span class="fs-4">
-				<!-- nome do colegio-->
-				<!-- b = negrito -->
-				<b class = "nome">Colégio Estadual</b> <br/> 
-				<b class = "nome2">Pedro Macedo </b>
-				<!-- Fim nome do colégio-->
-			</span>
-		  </a>
-		  <!-- barra de pesquisa-->
-		  <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
-			<input type="search" class="form-control" placeholder="Busca..." aria-label="Search">
-		  </form>
-		</div>
-		
-	  </header>
-</div>
-	
-	  <!-- fim cabeçalho duplo -->
-	 
-	 <!-- Começo Menu-->
-
-<!-- link externo para funcionalidade do menu como um bootstrap (svg, que cria formas bidimensionais)  -->
+    <nav class="py-2 bg-light border-bottom">
+      <div class="container d-flex flex-wrap">
+        <ul class="nav me-auto">
+          <div class="logocentro">
+          <li class="nav-item"><a href= "https://www.areadoaluno.seed.pr.gov.br/" class="nav-link link-dark px-2 active" aria-current="page">
+              <img src = "img/logopres.jfif" class = "prlogo">
+          </a></li>
+          </div>
+        </ul>
+      </div>
+    </nav>
+      <header class="py-3 mb-4 border-bottom" >
+          <div class="container d-flex flex-wrap justify-content-center">
+            <a href="index.php" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+              <img src = "img/pedromacedo.png" alt = "logo do colégio" class = "logo">
+              <span class="fs-4">
+                  <b class = "nome">Colégio Estadual</b> <br/> 
+                  <b class = "nome2">Pedro Macedo </b>
+              </span>
+            </a>
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
+              <input type="search" class="form-control" placeholder="Busca..." aria-label="Search">
+            </form>
+          </div>
+          
+        </header>
+      </div>
+      
+        <!-- fim cabeçalho duplo -->
+         <!-- Começo Menu-->
 <svg xmlns="http://www.w3.org/2000/svg"  hidden>
-	<!-- função do js -->
 	<symbol id="arrow" viewbox="0 0 16 16" >
-		<!-- polilinha cria varias linhas retas que conecta varios pontos, comando do svg-->
 		<polyline points="4 6, 8 10, 12 6" stroke="#000" stroke-width="2" fill="transparent" stroke-linecap="round" />
 	</symbol>
 </svg>
-<!-- navegação do menu em si -->
 <nav id="site-navigation" class="site-navigation" aria-label="Clickable Menu Demonstration">
 	<ul class="main-menu clicky-menu no-js">
 		<li>
@@ -94,7 +67,6 @@ crossorigin="anonymous">
 		<li>
 			<a href="historiacolegio.html">História</a>
 		</li>
-		<!-- dropdown das modalidades de ensino-->
 		<li>
 			<a href="#">
 				Modalidades de Ensino
@@ -106,10 +78,9 @@ crossorigin="anonymous">
 				<li><a href="fundamental.html">Fundamental</a></li>
 				<li><a href="medio.html">Médio</a></li>
 				<li><a href="profissionalizante.html">Profissionalizante</a></li>
-				<li><a href="celem.html">CELEM</a></li>
+				<li><a href="celem.php">CELEM</a></li>
 			</ul>
 		</li>
-		<!-- dropdown da equipe-->
 		<li>
 			<a href="#">
 				Equipe
@@ -124,7 +95,6 @@ crossorigin="anonymous">
 				<li><a href="espacodoprofessor.html">Espaço do Professor</a></li>
 			</ul>
 		</li>
-		<!-- dropdown fotos -->
 		<li>
 			<a href="#">
 				Fotos
@@ -133,13 +103,12 @@ crossorigin="anonymous">
 				</svg>
 			</a>
 			<ul>
-				<li><a href="colegio.html">Colégio</a></li>
+				<li><a href="colegio.php">Colégio</a></li>
 				<li><a href="professores.html">Professores</a></li>
 				<li><a href="eventos.html">Eventos</a></li>
 				<li><a href="cursos.html">Cursos</a></li>
 			</ul>
 		</li>
-		<!-- dropdown outros -->
 		<li>
 		<a href="#">
 				Outros
@@ -148,62 +117,17 @@ crossorigin="anonymous">
 				</svg>
 		</a>
 			<ul>
-				<li><a href="calendario2022.html">Calendário 2022</a></li>
+				<li><a href="calendario2022.php">Calendário 2022</a></li>
 				<li><a href="materialpara6anos.html">Material Para 6º Anos</a></li>
-				<li><a href="bibliotecacpm.html">Biblioteca CPM</a></li>
+				<li><a href="bibliotecacpm.php">Biblioteca CPM</a></li>
 				<li>
 			</ul>
 		</li>
-		
 	</ul>
 </nav>
 <!-- Fim Menu-->
-<!-- Começo Carrossel -->
-<div class="carousel" duration="7000">
-	<ul>
-	  <li id="c1_slide1"><div>gatito 1<br /><a href="https://www.google.com">ir para o post</a></div></li>  
-	  <li id="c1_slide2"><div>gatito 2<br /><a href="https://www.google.com">ir para o post</a></div></li>  
-	  <li id="c1_slide3"><div>gatito 3<br /><a href="https://www.google.com">ir para o post</a></div></li>  
-	  <li id="c1_slide4"><div>gatito 4<br /><a href="https://www.google.com">ir para o post</a></div></li>  
-	</ul>
-	<ol>
-	  <li><a href="#c1_slide1"></a></li>
-	  <li><a href="#c1_slide2"></a></li>
-	  <li><a href="#c1_slide3"></a></li>
-	  <li><a href="#c1_slide4"></a></li>
-	</ol>
-	<div class="prev">&lsaquo;</div>
-	<div class="next">&rsaquo;</div>
-  </div>
-	<!-- Fim Carrossel -->
-	<!-- Começo 3 Colunas / Notícias -->
-	<div class="wrapper">
-
-		<header>
-			<h1>Notícias Quentes!	</h1>
-		</header>
-			
-	<section class="columns">
-		
-		<div class="column1">
-			<h2>1º Titulo de noticiazinha</h2>
-			<p> comecinho da noticia</p>
-		</div>
-		
-		<div class="column2">
-			<h2>2º Titulo de uma noticiazinha</h2>
-			<p> comecinho da segunda noticiazinha</p>
-		</div>
-	  
-	  <div class="column3">
-			<h2>3º Titulo de uma outra noticiazinha </h2>
-			<p> comecinho da terceira noticiazinha e final das noticias que aparecem</p>
-		</div>
-		
-	</section>	
-	</div>
-	<!-- Fim 3 Colunas / Notícias -->
-	<!-- Começo Rodapé-->
+     fotos do colegio Pedro Macedo
+<!-- Começo Rodapé-->
 	<div class="container-fluid pb-0 mb-0 justify-content-center text-light ">
         <footer class = "pezin">
             <div class="row my-5 justify-content-center py-5">
@@ -215,12 +139,12 @@ crossorigin="anonymous">
 								Macedo
 							</h3>
 						</div>
-                        <div class="col-xl-2 col-md-4 col-sm-4 col-12"><h6 class="mb-3 mb-lg-4 bold-text">
+                        <div class="col-xl-2 col-md-4 col-sm-4 col-12"><h6 class="mb-3 mb-lg-4 bold-text ">
 							<b>MENU</b></h6>
 							<ul class="list-unstyled text-decoration-none">
-								<li><a href = "index.html">Página Inicial</a></li>
-								<li><a href = "historiacolegio.html">História</a></li>
-								<li><a href = "https://www.facebook.com/pages/Col%C3%A9gio-Estadual-Pedro-Macedo/124373407573346">Facebook</a></li>
+								<li class = "tira"><a href = "index.php">Página Inicial</a></li>
+								<li class = "tira"><a href = "historiacolegio.html">História</a></li>
+								<li class = "tira"><a href = "https://www.facebook.com/pages/Col%C3%A9gio-Estadual-Pedro-Macedo/124373407573346">Facebook</a></li>
 								<li>
 									<a href = "login.html" >
 										Apenas moderador
@@ -282,11 +206,9 @@ crossorigin="anonymous">
             </div>
         </footer>
     </div>
-	  
+	    <!-- Linkando JS-->
+        <script src="js/todaspagcolegio.js"></script>
+        <!-- ---------- -->
 	<!-- Fim Rodapé -->
-
-	  <!-- Linkando JS-->
-	  <script src="js/index.js"></script>
-	  <!-- ---------- -->
-</body>
+    </body>
 </html>

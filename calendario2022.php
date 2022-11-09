@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
         <title>
-            CELEM Pedro Macedo
+           Calendário 2022 - Pedro Macedo
         </title>
         <link rel="stylesheet" href="css/todaspagcolegio.css">
         
@@ -36,7 +36,7 @@ crossorigin="anonymous">
     </nav>
       <header class="py-3 mb-4 border-bottom" >
           <div class="container d-flex flex-wrap justify-content-center">
-            <a href="index.html" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+            <a href="index.php" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
               <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
               <img src = "img/pedromacedo.png" alt = "logo do colégio" class = "logo">
               <span class="fs-4">
@@ -78,7 +78,7 @@ crossorigin="anonymous">
 				<li><a href="fundamental.html">Fundamental</a></li>
 				<li><a href="medio.html">Médio</a></li>
 				<li><a href="profissionalizante.html">Profissionalizante</a></li>
-				<li><a href="celem.html">CELEM</a></li>
+				<li><a href="celem.php">CELEM</a></li>
 			</ul>
 		</li>
 		<li>
@@ -103,7 +103,7 @@ crossorigin="anonymous">
 				</svg>
 			</a>
 			<ul>
-				<li><a href="colegio.html">Colégio</a></li>
+				<li><a href="colegio.php">Colégio</a></li>
 				<li><a href="professores.html">Professores</a></li>
 				<li><a href="eventos.html">Eventos</a></li>
 				<li><a href="cursos.html">Cursos</a></li>
@@ -117,16 +117,16 @@ crossorigin="anonymous">
 				</svg>
 		</a>
 			<ul>
-				<li><a href="calendario2022.html">Calendário 2022</a></li>
+				<li><a href="calendario2022.php">Calendário 2022</a></li>
 				<li><a href="materialpara6anos.html">Material Para 6º Anos</a></li>
-				<li><a href="bibliotecacpm.html">Biblioteca CPM</a></li>
+				<li><a href="bibliotecacpm.php">Biblioteca CPM</a></li>
 				<li>
 			</ul>
 		</li>
 	</ul>
 </nav>
 <!-- Fim Menu-->
-     CELEM
+     Calendário 2022 - Pedro Macedo
 <!-- Começo Rodapé-->
 	<div class="container-fluid pb-0 mb-0 justify-content-center text-light ">
         <footer class = "pezin">
@@ -142,7 +142,7 @@ crossorigin="anonymous">
                         <div class="col-xl-2 col-md-4 col-sm-4 col-12"><h6 class="mb-3 mb-lg-4 bold-text ">
 							<b>MENU</b></h6>
 							<ul class="list-unstyled text-decoration-none">
-								<li class = "tira"><a href = "index.html">Página Inicial</a></li>
+								<li class = "tira"><a href = "index.php">Página Inicial</a></li>
 								<li class = "tira"><a href = "historiacolegio.html">História</a></li>
 								<li class = "tira"><a href = "https://www.facebook.com/pages/Col%C3%A9gio-Estadual-Pedro-Macedo/124373407573346">Facebook</a></li>
 								<li>

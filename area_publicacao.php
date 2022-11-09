@@ -39,7 +39,7 @@
                 <a href = "perfil.php"> Perfil </a>
             </li>
             <li>
-                <a href="index.html">Página inicial</a>
+                <a href="index.php">Página inicial</a>
             </li\>
             <li>
                 <a href="area_publicacao.php">Área de publicação</a>
