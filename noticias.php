@@ -72,7 +72,7 @@ crossorigin="anonymous">
 			<a href="noticias.php">Notícias</a>
 		</li>
 		<li>
-			<a href="historiacolegio.html">História</a>
+			<a href="historiacolegio.php">História</a>
 		</li>
 		<li>
 			<a href="#">
@@ -82,9 +82,9 @@ crossorigin="anonymous">
 				</svg>
 			</a>
 			<ul>
-				<li><a href="fundamental.html">Fundamental</a></li>
-				<li><a href="medio.html">Médio</a></li>
-				<li><a href="profissionalizante.html">Profissionalizante</a></li>
+				<li><a href="fundamental.php">Fundamental</a></li>
+				<li><a href="medio.php">Médio</a></li>
+				<li><a href="profissionalizante.php">Profissionalizante</a></li>
 				<li><a href="celem.php">CELEM</a></li>
 			</ul>
 		</li>
@@ -97,7 +97,7 @@ crossorigin="anonymous">
 			</a>
 			<ul>
 				<li><a href="direcao.php">Direção</a></li>
-				<li><a href="secretaria.html">Secretaria</a></li>
+				<li><a href="secretaria.php">Secretaria</a></li>
 				<li><a href="equipemultidisciplinar.php">Equipe Multidisciplinar</a></li>
 				<li><a href="espacodoprofessor.php">Espaço do Professor</a></li>
 			</ul>
@@ -111,7 +111,7 @@ crossorigin="anonymous">
 			</a>
 			<ul>
 				<li><a href="colegio.php">Colégio</a></li>
-				<li><a href="professores.html">Professores</a></li>
+				<li><a href="professores.php">Professores</a></li>
 				<li><a href="eventos.php">Eventos</a></li>
 				<li><a href="cursos.php">Cursos</a></li>
 			</ul>
@@ -125,7 +125,7 @@ crossorigin="anonymous">
 		</a>
 			<ul>
 				<li><a href="calendario2022.php">Calendário 2022</a></li>
-				<li><a href="materialpara6anos.html">Material Para 6º Anos</a></li>
+				<li><a href="materialpara6anos.php">Material Para 6º Anos</a></li>
 				<li><a href="bibliotecacpm.php">Biblioteca CPM</a></li>
 				<li>
 			</ul>
@@ -203,7 +203,7 @@ crossorigin="anonymous">
 							<b>MENU</b></h6>
 							<ul class="list-unstyled text-decoration-none">
 								<li class = "tira"><a href = "index.php">Página Inicial</a></li>
-								<li class = "tira"><a href = "historiacolegio.html">História</a></li>
+								<li class = "tira"><a href = "historiacolegio.php">História</a></li>
 								<li class = "tira"><a href = "https://www.facebook.com/pages/Col%C3%A9gio-Estadual-Pedro-Macedo/124373407573346">Facebook</a></li>
 								<li>
 									<a href = "login.html" >

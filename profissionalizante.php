@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
         <title>
-            História Pedro Macedo
+            Ensino Profissionalizante Pedro Macedo
         </title>
         <link rel="stylesheet" href="css/todaspagcolegio.css">
         
@@ -65,7 +65,7 @@ crossorigin="anonymous">
 			<a href="noticias.php">Notícias</a>
 		</li>
 		<li>
-			<a href="historiacolegio.html">História</a>
+			<a href="historiacolegio.php">História</a>
 		</li>
 		<li>
 			<a href="#">
@@ -75,9 +75,9 @@ crossorigin="anonymous">
 				</svg>
 			</a>
 			<ul>
-				<li><a href="fundamental.html">Fundamental</a></li>
-				<li><a href="medio.html">Médio</a></li>
-				<li><a href="profissionalizante.html">Profissionalizante</a></li>
+				<li><a href="fundamental.php">Fundamental</a></li>
+				<li><a href="medio.php">Médio</a></li>
+				<li><a href="profissionalizante.php">Profissionalizante</a></li>
 				<li><a href="celem.php">CELEM</a></li>
 			</ul>
 		</li>
@@ -90,7 +90,7 @@ crossorigin="anonymous">
 			</a>
 			<ul>
 				<li><a href="direcao.php">Direção</a></li>
-				<li><a href="secretaria.html">Secretaria</a></li>
+				<li><a href="secretaria.php">Secretaria</a></li>
 				<li><a href="equipemultidisciplinar.php">Equipe Multidisciplinar</a></li>
 				<li><a href="espacodoprofessor.php">Espaço do Professor</a></li>
 			</ul>
@@ -104,7 +104,7 @@ crossorigin="anonymous">
 			</a>
 			<ul>
 				<li><a href="colegio.php">Colégio</a></li>
-				<li><a href="professores.html">Professores</a></li>
+				<li><a href="professores.php">Professores</a></li>
 				<li><a href="eventos.php">Eventos</a></li>
 				<li><a href="cursos.php">Cursos</a></li>
 			</ul>
@@ -118,7 +118,7 @@ crossorigin="anonymous">
 		</a>
 			<ul>
 				<li><a href="calendario2022.php">Calendário 2022</a></li>
-				<li><a href="materialpara6anos.html">Material Para 6º Anos</a></li>
+				<li><a href="materialpara6anos.php">Material Para 6º Anos</a></li>
 				<li><a href="bibliotecacpm.php">Biblioteca CPM</a></li>
 				<li>
 			</ul>
@@ -126,32 +126,7 @@ crossorigin="anonymous">
 	</ul>
 </nav>
 <!-- Fim Menu-->
-Apresentação
-No Governo do Sr. Moysés Lupion, pelo Decreto nº 264 de 10 de fevereiro de 1956, foi fundado o Ginásio Estadual do Portão. Ainda em 1956, pelo Decreto nº 6037/56 o Ginásio Estadual do Portão passou a denominar-se Ginásio Estadual Nilo Cairo. Este nome foi conservado até 1959, quando houve nova alteração de nome, passando a denominar-se Ginásio Estadual Professor Pedro Macedo pelo Decreto nº 26950/59.
-
-Em 1965 iniciaram-se no estabelecimento as atividades do 2º ciclo, ocasião em que passou a denominar-se, pelo Decreto nº 19252/65, como Ginásio Estadual Pedro Macedo.
-
-Desde a data de sua fundação até 1965, o estabelecimento funcionou no prédio pertencente ao Grupo Escolar Francisco Azevedo Macedo, situado na Travessa Augusto Marach, 224, com atividades somente no período noturno. Em fevereiro de 1965, instalou-se em sede própria, à Avenida República Argentina, 2376, no Bairro do Portão.
-
-Com a implantação da Lei nº 5692/71, o estabelecimento sofre algumas modificações. Fica autorizado pelo Decreto nº 1394/75 o funcionamento do Complexo Escolar Portão, Ensino regular e Supletivo de 1º e 2º Graus, resultante da reorganização do Colégio Pedro Macedo, do Grupo Escolar Presidente Pedrosa, do Grupo Escolar Noturno Presidente Pedrosa e da Casa Escolar Fraternal. Pelo mesmo decreto o Ginásio Estadual Pedro Macedo passou a denominar-se Colégio Estadual Pedro Macedo Ensino de 1º e 2º Graus, tornando-se sede do Complexo Escolar Portão Ensino Regular e Supletivo de 1º e 2º Graus, responsabilizando-se pelo ensino de 5ª a 8ª série. Implantam-se as habilitações profissionalizantes no ano de 1978 em nível técnico e de auxiliar, a saber: Técnico em Estatística, Técnico em Publicidade, Técnico Assistente de Administração e Desenhista de Estrutura. Posteriormente a habilitação de Auxiliar de Escritório vem substituir a de Técnico em Estatística. A habilitação de Técnico em Publicidade nunca chegou a funcionar em razão da falta de matrículas.
-
-Através da Resolução nº. 3437/81, fica reconhecido o Curso de 1º Grau Regular de 5ª a 8ª série e o Curso de 2º Grau Regular com as Habilitações plenas de Assistente de Administração e Auxiliar de Escritório. Mesmo após o desmembramento do Complexo Escolar Portão, o estabelecimento continuou oferecendo apenas a 2ª fase do Ensino de 1º Grau, compromissando-se a atender a demanda das Escolas da região que oferecem apenas as quatro primeiras séries do 1º Grau.
-
-Com o advento da Lei nº. 7044/82 o Colégio Estadual Pedro Macedo, Ensino de 1º e 2º Graus implanta o curso de 2º Grau Propedêutico no ano de 1983, autorizado pela Resolução nº. 2425/84 e reconhecido como curso de 2º Grau Regular Propedêutico através da Resolução nº. 3782/86. Em razão das dificuldades em levar adiante a proposta do Ensino Profissionalizante, as habilitações profissionais em funcionamento na ocasião foram extintas pela Resolução nº 1491/85.
-
-Por preencher os quesitos de demanda, recursos humanos e recursos físicos e reconhecendo a importância de profissionais em nível de 1ª a 4ª série compromissadas com a universalização da educação básica implantou-se a habilitação de Magistério no Curso de 2º Grau Regular pela Resolução nº 627/87, devidamente reconhecida pela Resolução nº. 16101/90.
-
-Pela Resolução nº. 3120/98 de 11/09//98 a denominação do Estabelecimento passou a ser: COLÉGIO ESTADUAL PEDRO MACEDO – ENSINO FUNDAMENTAL E MÉDIO. Em 1999 formou-se a última turma da habilitação para o Magistério tendo a mesma sido extinta. Ainda neste ano inicia-se a implantação gradativa para os turnos diurno e noturno do Ensino Médio (Lei nº. 9394/96 – DOU de 23/12/96). No ano de 2000 formam-se as últimas turmas de Educação Geral – Preparação Universal (Lei nº. 5692/71).
-
-O Ensino Fundamental, no ano de 2001, passou a trabalhar com nova Matriz Curricular, de acordo com a LDBEN (Lei 9394/96).
-
-No ano de 2005 foi autorizada pela SEED a implantação gradativa dos seguintes Cursos Profissionais Integrados: Informática e Secretariado, com a duração de quatro anos cada, para alunos que concluíram o Ensino Fundamental. Foi autorizada também a implantação dos seguintes Cursos Profissionalizantes Subseqüentes: Informática e Secretariado, com duração de um (01) ano e meio e o Técnico em Secretariado, com duração de 01 (um) ano, para alunos que concluíram o Ensino Médio.
-
-Os cursos subseqüentes estão autorizados sob a resolução 3250/07 de 23/07/07 para o Secretariado e, para informática resolução 3277/07 de 23/07/07.
-
-
-
-(Atualizado em 21/04/2015)
+     Ensino profissionalizante
 <!-- Começo Rodapé-->
 	<div class="container-fluid pb-0 mb-0 justify-content-center text-light ">
         <footer class = "pezin">
@@ -168,7 +143,7 @@ Os cursos subseqüentes estão autorizados sob a resolução 3250/07 de 23/07/07
 							<b>MENU</b></h6>
 							<ul class="list-unstyled text-decoration-none">
 								<li class = "tira"><a href = "index.php">Página Inicial</a></li>
-								<li class = "tira"><a href = "historiacolegio.html">História</a></li>
+								<li class = "tira"><a href = "historiacolegio.php">História</a></li>
 								<li class = "tira"><a href = "https://www.facebook.com/pages/Col%C3%A9gio-Estadual-Pedro-Macedo/124373407573346">Facebook</a></li>
 								<li>
 									<a href = "login.html" >
@@ -237,4 +212,3 @@ Os cursos subseqüentes estão autorizados sob a resolução 3250/07 de 23/07/07
 	<!-- Fim Rodapé -->
     </body>
 </html>
-
