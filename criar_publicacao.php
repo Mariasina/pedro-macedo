@@ -31,8 +31,27 @@
             <label class = "img">
                 <input class="form-control" type="file" name="imagem" id="formFile"><br>
             <label class = "pub"></label>
-                    <textarea class = "form-control form-control-lg" name="descricao" rows="5" placeholder="Descrição..."></textarea><br><br/>
-                <input class="btn btn-primary" value="Enviar Publicação" type = "submit" name="env">
+                    <textarea class = "form-control form-control-lg" name="descricao" rows="5" cols = "150" placeholder="Descrição..."></textarea><br><br/>
+                <div>Selecione a página onde a publicação será cadastrada:</div>
+                <select name="paginas">
+                    <option value="1"><a>Notícias</a></option>
+                    <option value="2"><a>Fundamental</a></option>
+                    <option value="3"><a>Médio</a></option>
+                    <option value="4"><a>Profissionalizante</a></option>
+                    <option value="5"><a>CELEM</a></option>
+                    <option value="6"><a>Direção</a></option>
+                    <option value="7"><a>Secretaria</a></option>
+                    <option value="8"><a>Equipe Multidisciplinar</a></option>
+                    <option value="9"><a>Espaço do Professor</a></option>
+                    <option value="10"><a>Colégio</a></option>  
+                    <option value="11"><a>Professores</a></option>
+                    <option value="12"><a>Eventos</a></option> 
+                    <option value="13"><a>Cursos</a></option>
+                    <option value="14"><a>Calendario 2022</a></option>
+                    <option value="15"><a>Material para 6º anos</a></option>
+                    <option value="16"><a>Biblioteca CPM</a></option>
+                </select><br><br>
+            <input class="btn btn-primary" value="Enviar Publicação" type = "submit" name="env">
         </form>
     </div>
 </body>
