@@ -41,6 +41,9 @@
             </a>
         </div>
         <?php
+        switch($publicacao){
+            case "1":{echo "noticias"; break;}
+        }
         echo $publicacao['data'] . " - ";
         echo $publicacao['hora'];
         ?>
