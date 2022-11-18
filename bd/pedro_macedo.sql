@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 25-Out-2022 às 15:49
+-- Tempo de geração: 18-Nov-2022 às 12:48
 -- Versão do servidor: 10.4.24-MariaDB
 -- versão do PHP: 8.1.6
 
@@ -75,24 +75,39 @@ CREATE TABLE `publicacao` (
   `imagem` varchar(200) NOT NULL,
   `data` varchar(100) NOT NULL,
   `hora` varchar(100) NOT NULL,
-  `usuario_cod` int(11) NOT NULL
+  `usuario_cod` int(11) NOT NULL,
+  `pagina` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `publicacao`
 --
 
-INSERT INTO `publicacao` (`cod`, `titulo`, `descricao`, `imagem`, `data`, `hora`, `usuario_cod`) VALUES
-(20, 'fihu', 'lka', '../img/uploads/img_633b53bd3e9f9.jpg', '03/10/2022', '18:27', 7),
-(21, 'fihu', 'lka', '../img/uploads/img_633b5647746f0.png', '03/10/2022', '18:38', 7),
-(27, 'fihu', 'lka', '../img/uploads/img_633c334cd4fca.png', '04/10/2022', '10:21', 7),
-(33, 'fihu', 'lka', '../img/uploads/img_633d678922e78.png', '05/10/2022', '08:16', 7),
-(34, 'fihu', 'lkalo', '../img/uploads/img_633d67d14f810.png', '05/10/2022', '08:17', 7),
-(37, 'tui', 'ppp', '../img/uploads/img_633d86522cd00.png', '05/10/2022', '10:27', 7),
-(38, 'teste de sauhaush', 'mixuruca esse layout em amigos', '../img/uploads/img_6345e14c473f9.jpg', '11/10/2022', '18:34', 7),
-(40, 'muito bom', 'adorei eee', '../img/uploads/img_6357c525da60e.jpg', '25/10/2022', '08:14', 7),
-(41, 'legal', 'sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus ', '', '25/10/2022', '09:55', 7),
-(42, 'legal sim', 'sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus ', '../img/uploads/img_6357dce634899.jpg', '25/10/2022', '09:56', 7);
+INSERT INTO `publicacao` (`cod`, `titulo`, `descricao`, `imagem`, `data`, `hora`, `usuario_cod`, `pagina`) VALUES
+(20, 'fihu', 'lka nha\r\n', '../img/uploads/img_633b53bd3e9f9.jpg', '03/10/2022', '18:27', 7, 0),
+(21, 'fihu', 'lka', '../img/uploads/img_633b5647746f0.png', '03/10/2022', '18:38', 7, 0),
+(27, 'fihu', 'lka', '../img/uploads/img_633c334cd4fca.png', '04/10/2022', '10:21', 7, 0),
+(33, 'fihu', 'lka', '../img/uploads/img_633d678922e78.png', '05/10/2022', '08:16', 7, 0),
+(34, 'fihu', 'lkalo', '../img/uploads/img_633d67d14f810.png', '05/10/2022', '08:17', 7, 0),
+(37, 'tui', 'ppp', '../img/uploads/img_633d86522cd00.png', '05/10/2022', '10:27', 7, 0),
+(38, 'teste de sauhaush', 'mixuruca esse layout em amigos', '../img/uploads/img_6345e14c473f9.jpg', '11/10/2022', '18:34', 7, 0),
+(40, 'muito bom', 'adorei eee', '../img/uploads/img_6357c525da60e.jpg', '25/10/2022', '08:14', 7, 0),
+(41, 'legal', 'sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus ', '', '25/10/2022', '09:55', 7, 0),
+(42, 'legal sim', 'sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus sus ', '../img/uploads/img_6357dce634899.jpg', '25/10/2022', '09:56', 7, 0),
+(43, '', '', '', '16/11/2022', '10:46', 7, 0),
+(44, 'tentando', '', '', '16/11/2022', '10:52', 7, 0),
+(45, 'a', '', '', '16/11/2022', '10:52', 7, 0),
+(46, '', 'D', '', '16/11/2022', '10:57', 7, 0),
+(47, '', '', '', '16/11/2022', '10:58', 7, 0),
+(48, 'tilt', 'dd', '', '16/11/2022', '11:02', 7, 0),
+(49, 'tilt', 'dd', '', '16/11/2022', '11:04', 7, 0),
+(50, 'tilt', 'dd', '', '16/11/2022', '11:05', 7, 1),
+(51, 'tilt', 'dd', '', '16/11/2022', '11:06', 7, 1),
+(52, 'tiltuuuu', 'ddiii', '', '16/11/2022', '11:08', 7, 1),
+(53, 'tiltuuuu', 'ddiii', '', '16/11/2022', '11:10', 7, 1),
+(54, '1', '1', '', '16/11/2022', '11:12', 7, 0),
+(55, '1 sim', '1', '', '16/11/2022', '11:12', 7, 1),
+(56, '4', '', '', '16/11/2022', '11:18', 7, 4);
 
 -- --------------------------------------------------------
 
@@ -158,7 +173,7 @@ ALTER TABLE `perfil_usuario`
 -- AUTO_INCREMENT de tabela `publicacao`
 --
 ALTER TABLE `publicacao`
-  MODIFY `cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
 
 --
 -- AUTO_INCREMENT de tabela `usuario`

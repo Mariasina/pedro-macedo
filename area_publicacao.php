@@ -101,6 +101,78 @@
                         Excluir
                     </a>
                     </div>
+                    <div>
+                    <?php $pagina = $row_usuario['pagina'];?>
+                    Essa publicação se encontra na página: 
+                    <?php
+                    switch ($pagina) {
+                        case "1": {
+                        echo "Noticias <br>";
+                        break;
+                        }
+                        case "2": { 
+                            echo "Fundamental <br>";
+                            break;
+                        }
+                        case "3": {
+                            echo "Médio <br>";
+                        break;
+                        }
+                        case "4": {
+                            echo "Profissionalizante <br>";
+                        break;
+                        }
+                        case "5": {
+                            echo "CELEM <br>";
+                        break;
+                        }
+                        case "6": {
+                            echo "Direção <br>";
+                        break;
+                        }
+                        case "7": {
+                            echo "Secretaria <br>";
+                        break;
+                        }
+                        case "8": {
+                            echo "Equipe Multidisciplinar <br>";
+                        break;
+                        }
+                        case "9": {
+                            echo "Espaço do Professor <br>";
+                        break;
+                        }
+                        case "10": {
+                            echo "Colégio <br>";
+                        break;
+                        }
+                        case "11": {
+                            echo "Professores <br>";
+                        break;
+                        }
+                        case "12": {
+                            echo "Eventos <br>";
+                        break;
+                        }
+                        case "13": {
+                            echo "Cursos <br>";
+                        break;
+                        }
+                        case "14": {
+                            echo "Calendario 2022 <br>";
+                        break;
+                        }
+                        case "15": {
+                            echo "Material para 6º anos <br>";
+                        break;
+                        }
+                        case "16": {
+                            echo "Biblioteca CPM <br>";
+                        break;
+                        }
+                
+                    }?>
+                    </div>
                     <div class = "hora">
                 <?php
                     
