@@ -56,8 +56,8 @@
 }
 
 /**
- * Abre e fecha o Menu com JS
- */
+ Abre e fecha o Menu com JS
+*/
 
 .clicky-menu ul[aria-hidden="false"] {
 	visibility: visible;
@@ -80,7 +80,7 @@
 
 /* DEMO CSS */
 body {
-	margin: 0;
+	margin: 0px;
 	min-height: 100vh;
 } 
 
@@ -218,18 +218,7 @@ svg[hidden] {
 	}
 }
 
-.github {
-	text-align: center;
-	a {
-		color: #fffff;
-		opacity: .6;
-		
-		&:hover,
-		&:focus {
-			opacity: 1;
-		}
-	}
-}
+
 
 /** Fim do Menu **/
 /** pg historia **/
