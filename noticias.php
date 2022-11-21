@@ -136,56 +136,61 @@ crossorigin="anonymous">
 <!--Publicações-->
 <div>
 	<?php  
-            //pega as informações do bd
-            $selecionar = "SELECT * FROM publicacao ORDER BY cod DESC";
-            //cria uma variavel para pegar as informações
-            $resultado = mysqli_query ($conexao, $selecionar);
+        //pega as informações do bd
+        $selecionar = "SELECT * FROM publicacao ORDER BY cod DESC";
+         //cria uma variavel para pegar as informações
+         $resultado = mysqli_query ($conexao, $selecionar);
                 
-            //variável para mostrar as informações se elas forem pegas com sucesso
-            while($row_usuario = mysqli_fetch_assoc($resultado)){ ?>
+        //variável para mostrar as informações se elas forem pegas com sucesso
+        while($row_usuario = mysqli_fetch_assoc($resultado)){ 
+	?>
 
-            <div class = "pub">
+        <div class = "pub">
             <div class = "descricao">
-            <?php
+    <?php
+        echo "<h3>" . $row_usuario['titulo'] . "</h3>"; 
+	?>
+            </div>
+            <div class = "descricao">
+    <?php 
+        echo "" . $row_usuario['descricao']; 
+	?>
+            </div>
+    <?php
+        if  ((isset($row_usuario['imagem'])) &&  (!empty($row_usuario['imagem']))){ 
+	?>
+        <img src="pedro_macedo/
+		<?php echo $row_usuario['imagem']; } ?>  ">   <br/>
 
-                echo "<h3>" . $row_usuario['titulo'] . "</h3>"; ?>
-            </div>
-                <div class = "descricao">
-                <?php 
-                echo "" . $row_usuario['descricao']; ?>
-                </div>
-                <?php
-                if  ((isset($row_usuario['imagem'])) &&  (!empty($row_usuario['imagem']))){ ?>
-                <img src="pedro_macedo/<?php echo $row_usuario['imagem']; } ?>  ">    
-            
-                    <br/>
-                    <!--botões-->
-					<?php 
-					if (isset($_SESSION['cod'])){?>
-						<div class = "acoes">
-						<!--php para criar o cod da pub na url-->
-						<a href="vizualizar_publicacao.php?cod=<?php echo $row_usuario['cod'];?>" class = "w-10 btn btn-lg btn-primary rounded-5">
-							Visualizar
-						</a>
-						<a href="editar_publicacao.php?cod=<?php echo $row_usuario['cod'];?>" class = "w-10 btn btn-lg btn-primary rounded-5">
-							Editar
-						</a>
-						<a href="bd/excluir_pub.php?cod=" class = "w-10 btn btn-lg btn-primary rounded-5">
-							Inativar
-						</a>
-						</div>
-						<div class = "hora">
-                	<?php }
+<!--botões-->
+	<?php 
+		if (isset($_SESSION['cod'])){
+	?>
+			<div class = "acoes">
+<!--php para criar o cod da pub na url-->
+				<a href="vizualizar_publicacao.php?cod=<?php echo $row_usuario['cod'];?>" class = "w-10 btn btn-lg btn-primary rounded-5">
+				Visualizar
+				</a>
+				<a href="editar_publicacao.php?cod=<?php echo $row_usuario['cod'];?>" class = "w-10 btn btn-lg btn-primary rounded-5">
+				Editar
+				</a>
+				<a href="bd/excluir_pub.php?cod=" class = "w-10 btn btn-lg btn-primary rounded-5">
+				Inativar
+				</a>
+			</div>
+
+			<div class = "hora">
+    <?php }
                     
-                echo "" . $row_usuario['data'] . " - " ;
-                echo "" . $row_usuario['hora'];
+    	echo "" . $row_usuario['data'] . " - " ;
+        echo "" . $row_usuario['hora'];
                 
-            ?>
-                    </div>
+    ?>
             </div>
-            <?php
-			}
-            ?>  
+        </div>
+    <?php
+		}
+    ?>  
 </div>
 <!-- Começo Rodapé-->
 	<div class="container-fluid pb-0 mb-0 justify-content-center text-light ">

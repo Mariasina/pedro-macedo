@@ -11,7 +11,7 @@
 		Colégio Estadual Pedro Macedo 
 	</title>
 	
-	<link rel="stylesheet"  href="css/indexcolegio.css">
+	<link rel="stylesheet"  href="css/indeexcolegio.css">
 
 	<!-- Linkando css e js com Bootstrap -->
 
@@ -36,47 +36,47 @@ crossorigin="anonymous">
                     Painel de Edição
             </div>
         </nav>
-    </div>
-    <div class="cor">
+</div>
+<div class="cor">
     <header class = "py-2 mg-2 border-bottom">
-    <nav id = "menu-h">
-    <ul>
+    	<nav id = "menu-h">
+    		<ul>
 
-        <!--Mostra o nome do usuário cadastrado--> 
-      <span class = fs-4> <b> Olá, <?php echo $_SESSION['nome'];?>!<br/> </b>
-        <!--Todos os "if perfil 1" mostram informações que apenas o administrador vê."-->
-        <?php if($_SESSION['perfil'] == 1){?>
-      <b>  Você é um Administrador. </b> </span>
-        <?php }?>
-        <!--Links-->
-            <li>
-                <a href = "perfil.php"> Perfil </a>
-            </li>
-            <li>
-                <a href="index.php">Página inicial</a>
-            </li>
-            <li>
-                <a href="area_publicacao.php">Área de publicação</a>
-            </li>
-            <li>
-                <a href="usuarios_cadastrados.php">Usuários Cadastrados</a>
-            </li>
-            <?php if($_SESSION['perfil'] == 1){?>
-            <li>
-                <a href="aceitar_cadastro.php">Aceitar Cadastros Novos</a>
-            </li>
-            <?php }?>
-            <li>
-            <a href="bd/logout.php">Sair</a> 
-            </li>
-        </ul>
-    </nav>
+        	<!--Mostra o nome do usuário cadastrado--> 
+      			<span class = fs-4> <b> Olá, <?php echo $_SESSION['nome'];?>!<br/> </b>
+       		<!--Todos os "if perfil 1" mostram informações que apenas o administrador vê."-->
+        		<?php if($_SESSION['perfil'] == 1){?>
+      				<b>  Você é um Administrador. </b> </span>
+       			 <?php }?>
+        	<!--Links-->
+				<li>
+					<a href = "perfil.php"> Perfil </a>
+				</li>
+				<li>
+					<a href="index.php">Página inicial</a>
+				</li>
+				<li>
+					<a href="area_publicacao.php">Área de publicação</a>
+				</li>
+				<li>
+					<a href="usuarios_cadastrados.php">Usuários Cadastrados</a>
+				</li>
+				<?php if($_SESSION['perfil'] == 1){?>
+				<li>
+					<a href="aceitar_cadastro.php">Aceitar Cadastros Novos</a>
+				</li>
+				<?php }?>
+				<li>
+				<a href="bd/logout.php">Sair</a> 
+				</li>
+        	</ul>
+    	</nav>
     </header> 
-    </div> <br/>
-	<?php } ?>
+</div> <br/>
+<?php } ?>
 <!--Fim painel de edição-->
 	
-	<!-- Começo Cabeçalho Duplo -->
+<!-- Começo Cabeçalho Duplo -->
 
 <!-- primeiro cabeçalho -->
 <div class = "cabeça">
@@ -92,9 +92,11 @@ crossorigin="anonymous">
       <ul class="nav me-auto">
 		<div class="logocentro">
 		<!-- logo e link da educação paraná-->
-        <li class="nav-item"><a href= "https://www.educacao.pr.gov.br/desvio.html" class="nav-link link-dark px-2 active" aria-current="page">
-			<img src = "img/logopres.jfif" class = "prlogo">
-		</a></li>
+        <li class="nav-item">
+			<a href= "https://www.educacao.pr.gov.br/desvio.html" class="nav-link link-dark px-2 active" aria-current="page">
+				<img src = "img/logopres.jfif" class = "prlogo">
+			</a>
+		</li>
 		</div>
       </ul>
 	 </div>
@@ -116,18 +118,14 @@ crossorigin="anonymous">
 				<!-- Fim nome do colégio-->
 			</span>
 		  </a>
-		  <!-- barra de pesquisa-->
-		  <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
-			<input type="search" class="form-control" placeholder="Busca..." aria-label="Search">
-		  </form>
 		</div>
 		
 	  </header>
 </div>
 	
-	  <!-- fim cabeçalho duplo -->
+<!-- fim cabeçalho duplo -->
 	 
-	 <!-- Começo Menu-->
+<!-- Começo Menu-->
 
 <!-- link externo para funcionalidade do menu como um bootstrap (svg, que cria formas bidimensionais)  -->
 <svg xmlns="http://www.w3.org/2000/svg"  hidden>
@@ -211,23 +209,46 @@ crossorigin="anonymous">
 </nav>
 <!-- Fim Menu-->
 <!-- Começo Carrossel -->
-<div class="carousel" duration="7000">
-	<ul>
-	  <li id="c1_slide1"><div>gatito 1<br /><a href="https://www.google.com">ir para o post</a></div></li>  
-	  <li id="c1_slide2"><div>gatito 2<br /><a href="https://www.google.com">ir para o post</a></div></li>  
-	  <li id="c1_slide3"><div>gatito 3<br /><a href="https://www.google.com">ir para o post</a></div></li>  
-	  <li id="c1_slide4"><div>gatito 4<br /><a href="https://www.google.com">ir para o post</a></div></li>  
-	</ul>
-	<ol>
-	  <li><a href="#c1_slide1"></a></li>
-	  <li><a href="#c1_slide2"></a></li>
-	  <li><a href="#c1_slide3"></a></li>
-	  <li><a href="#c1_slide4"></a></li>
-	</ol>
-	<div class="prev">&lsaquo;</div>
-	<div class="next">&rsaquo;</div>
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
-	<!-- Fim Carrossel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="https://img.cancaonova.com/cnimages/canais/uploads/sites/6/2014/12/formacao_como-escolher-a-melhor-escola-para-os-filhos.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Primeira imagem do carrossel</h5>
+        <p>Texto para a primeira imagem do carrossel.</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="..." class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Segunda imagem do carrossel</h5>
+        <p>algum texto pra segunda imagem do carrossel.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>terceira imagem do carrossel</h5>
+        <p>alguma descricao para a terceira imagem do carrossel.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- Fim Carrossel -->
 	<!-- Começo 3 Colunas / Notícias -->
 	<div class="wrapper">
 

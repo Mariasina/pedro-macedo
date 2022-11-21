@@ -82,9 +82,6 @@
 body {
 	margin: 0;
 	min-height: 100vh;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-				 Roboto, Oxygen-Sans, Ubuntu, Cantarell,
-				 "Helvetica Neue", sans-serif;
 } 
 
 /* Hidden SVG usando para as setas escondidas no menu */
@@ -224,7 +221,7 @@ svg[hidden] {
 .github {
 	text-align: center;
 	a {
-		color: #fff;
+		color: #fffff;
 		opacity: .6;
 		
 		&:hover,
@@ -235,6 +232,23 @@ svg[hidden] {
 }
 
 /** Fim do Menu **/
+/** pg historia **/
+.texto{
+	margin: 30px;
+	text-align: justify;
+	border: 10px solid #ceebfb;
+	padding: 20px;
+}
+/** fim pg historia **/
+/** pg noticia **/
+.pub {
+	border: 20px solid #ceebfb;
+	padding: 40px;
+	margin: 70px;
+	text-align: center;
+}
+
+/** fim pg noticia**/
 /* começo rodapé */
 .pezin {
 	position: absolute;
@@ -247,12 +261,8 @@ svg[hidden] {
 
 
 @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
-body {
-    background: linear-gradient(0deg, #fff, 50%, #DEEEFE);
-    font-family: 'Rubik', sans-serif;
-    background: #ffffff;
-    height: 100 !important;
-}
+
+
 
 
 .container-fluid{
