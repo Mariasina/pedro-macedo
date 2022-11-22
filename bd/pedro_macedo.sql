@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 22-Nov-2022 às 15:14
--- Versão do servidor: 10.4.24-MariaDB
--- versão do PHP: 8.1.6
+-- Tempo de geração: 22-Nov-2022 às 21:16
+-- Versão do servidor: 10.4.25-MariaDB
+-- versão do PHP: 7.4.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -32,17 +32,16 @@ CREATE TABLE `empresa` (
   `proprietarios` varchar(100) NOT NULL,
   `endereco` varchar(100) NOT NULL,
   `telefone` varchar(100) NOT NULL,
-  `comentario` varchar(100) NOT NULL,
-  `id` int(11) NOT NULL
+  `comentario` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `empresa`
 --
 
-INSERT INTO `empresa` (`nome`, `proprietarios`, `endereco`, `telefone`, `comentario`, `id`) VALUES
-('Colégio Estadual Pedro Macedo', 'Maria Carolina', 'Av. Rep. Argentina, 2376 - Portão, Curitiba - PR', '(41) 3345-3993', 'Trabalho multidiciplinar que foi criado visando atingir melhor qualidade ao acessar o portal do colé', 1),
-('', 'Emyli Caroline', '', '', '', 2);
+INSERT INTO `empresa` (`nome`, `proprietarios`, `endereco`, `telefone`, `comentario`) VALUES
+('Colégio Estadual Pedro Macedo', 'Maria Carolina', 'Av. Rep. Argentina, 2376 - Portão, Curitiba - PR', '(41) 3345-3993', 'Trabalho multidiciplinar que foi criado visando atingir melhor qualidade ao acessar o portal do colé'),
+('', 'Emyli Caroline', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -85,8 +84,6 @@ CREATE TABLE `publicacao` (
 --
 
 INSERT INTO `publicacao` (`cod`, `titulo`, `descricao`, `imagem`, `data`, `hora`, `usuario_cod`, `pagina`) VALUES
-(20, 'fihu', 'lka nha\r\n', '../img/uploads/img_633b53bd3e9f9.jpg', '03/10/2022', '18:27', 7, 0),
-(21, 'fihu', 'lka', '../img/uploads/img_633b5647746f0.png', '03/10/2022', '18:38', 7, 0),
 (27, 'fihu', 'lka', '../img/uploads/img_633c334cd4fca.png', '04/10/2022', '10:21', 7, 0),
 (33, 'fihu', 'lka', '../img/uploads/img_633d678922e78.png', '05/10/2022', '08:16', 7, 0),
 (34, 'fihu', 'lkalo', '../img/uploads/img_633d67d14f810.png', '05/10/2022', '08:17', 7, 0),
@@ -100,15 +97,7 @@ INSERT INTO `publicacao` (`cod`, `titulo`, `descricao`, `imagem`, `data`, `hora`
 (45, 'a', '', '', '16/11/2022', '10:52', 7, 0),
 (46, '', 'D', '', '16/11/2022', '10:57', 7, 0),
 (47, '', '', '', '16/11/2022', '10:58', 7, 0),
-(48, 'tilt', 'dd', '', '16/11/2022', '11:02', 7, 0),
-(49, 'tilt', 'dd', '', '16/11/2022', '11:04', 7, 0),
-(50, 'tilt', 'dd', '', '16/11/2022', '11:05', 7, 1),
-(51, 'tilt', 'dd', '', '16/11/2022', '11:06', 7, 1),
-(52, 'tiltuuuu', 'ddiii', '', '16/11/2022', '11:08', 7, 1),
-(53, 'tiltuuuu', 'ddiii', '', '16/11/2022', '11:10', 7, 1),
-(54, '1', '1', '', '16/11/2022', '11:12', 7, 0),
-(55, '1 sim', '1', '', '16/11/2022', '11:12', 7, 1),
-(56, '4', '', '', '16/11/2022', '11:18', 7, 4);
+(48, 'tilt', 'dd', '', '16/11/2022', '11:02', 7, 0);
 
 -- --------------------------------------------------------
 
@@ -122,30 +111,23 @@ CREATE TABLE `usuario` (
   `email` varchar(150) NOT NULL,
   `senha` varchar(45) NOT NULL,
   `cpf` int(20) NOT NULL,
-  `perfil_cod` int(11) NOT NULL,
-  `id_empresa` int(11) NOT NULL
+  `perfil_cod` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `usuario`
 --
 
-INSERT INTO `usuario` (`cod`, `nome`, `email`, `senha`, `cpf`, `perfil_cod`, `id_empresa`) VALUES
-(2, 'emyli', 'emyli@gmail.com', '202cb962ac59075b964b07152d234b70', 0, 1, 0),
-(5, 'ha', 'ha@gmail.com', '925cc8d2953eba624b2bfedf91a91613', 0, 2, 0),
-(7, 'mari', 'mari@gmail.com', '202cb962ac59075b964b07152d234b70', 0, 1, 0),
-(6, 'emy', 'emy@gmail.com', '202cb962ac59075b964b07152d234b70', 0, 2, 0),
-(8, 'emilia', 'teste@gmail.com', '202cb962ac59075b964b07152d234b70', 0, 2, 0);
+INSERT INTO `usuario` (`cod`, `nome`, `email`, `senha`, `cpf`, `perfil_cod`) VALUES
+(2, 'emyli', 'emyli@gmail.com', '202cb962ac59075b964b07152d234b70', 0, 1),
+(5, 'ha', 'ha@gmail.com', '925cc8d2953eba624b2bfedf91a91613', 0, 2),
+(7, 'mari', 'mari@gmail.com', '202cb962ac59075b964b07152d234b70', 0, 1),
+(6, 'emy', 'emy@gmail.com', '202cb962ac59075b964b07152d234b70', 0, 2),
+(8, 'emilia', 'teste@gmail.com', '202cb962ac59075b964b07152d234b70', 0, 2);
 
 --
 -- Índices para tabelas despejadas
 --
-
---
--- Índices para tabela `empresa`
---
-ALTER TABLE `empresa`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Índices para tabela `perfil_usuario`
@@ -165,18 +147,11 @@ ALTER TABLE `publicacao`
 --
 ALTER TABLE `usuario`
   ADD PRIMARY KEY (`cod`),
-  ADD KEY `fk_perfil` (`perfil_cod`),
-  ADD KEY `fk_empresa` (`id_empresa`);
+  ADD KEY `fk_perfil` (`perfil_cod`);
 
 --
 -- AUTO_INCREMENT de tabelas despejadas
 --
-
---
--- AUTO_INCREMENT de tabela `empresa`
---
-ALTER TABLE `empresa`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de tabela `perfil_usuario`
@@ -188,7 +163,7 @@ ALTER TABLE `perfil_usuario`
 -- AUTO_INCREMENT de tabela `publicacao`
 --
 ALTER TABLE `publicacao`
-  MODIFY `cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
+  MODIFY `cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 
 --
 -- AUTO_INCREMENT de tabela `usuario`
