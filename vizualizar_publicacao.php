@@ -9,8 +9,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publicação</title>
+    <link rel = "stylesheet" href = "css/vizupub.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
+  <div class = "titulo">
+  Visualizando Publicação
+</div>
     <?php 
 
         $cod = $_GET['cod'];
@@ -22,14 +28,15 @@
         $pagina = $publicacao['pagina'];
     
     ?>
-    <div>
-        <h1><?php echo $publicacao['titulo'];?></h1>
-        <?php echo $publicacao['descricao'] . "<br>";
-        if  ((isset($publicacao['imagem'])) &&  (!empty($publicacao['imagem']))){ ?>
+    <div class = "corpo">
+        <h1>Título: <?php echo $publicacao['titulo'];?></h1><div class = "desc">
+       <h4><b> Descrição: </b></h4> <BR> <P>
+        <?php echo $publicacao['descricao'] . "<br>";?> </div> </p> 
+        <?php if  ((isset($publicacao['imagem'])) &&  (!empty($publicacao['imagem']))){ ?>
             <img src="pedro_macedo/<?php echo $publicacao['imagem'];} ?>"/><br>
         
         <!--botões-->
-        <div class = "acoes">
+        <div class = "acoes"> <br>
             <!--php para criar o cod da pub na url-->
             <a href="editar_publicacao.php?cod=<?php echo $row_usuario['cod'];?>" class = "w-10 btn btn-lg btn-primary rounded-5">
                 Editar
@@ -37,9 +44,10 @@
             <a href="bd/excluir_pub.php?cod=<?php echo $row_usuario['cod'];?>" name ="excluir" class = "w-10 btn btn-lg btn-primary rounded-5">
                 Excluir
             </a>
-        </div>
-        <div>
+        </div> <br>
+        <div> <b>
         Essa publicação se encontra na página: 
+        </b> 
         <?php
         switch ($pagina) {
             case "1": {
@@ -108,11 +116,14 @@
             }
     
           }?>
-        </div>
+        </div> <br>
         <?php
         echo $publicacao['data'] . " - ";
         echo $publicacao['hora'];
         ?>
+        <a href = "area_publicacao.php" class = "voltar">
+          <- Voltar
+        </a>
     </div>
 </body>
 </html>

@@ -43,9 +43,11 @@
             <li>
                 <a href="area_publicacao.php">Área de publicação</a>
             </li>
+            <?php if($_SESSION['perfil'] == 1){?>
             <li>
                 <a href="usuarios_cadastrados.php">Usuários Cadastrados</a>
             </li>
+            <?php }?>
             <?php if($_SESSION['perfil'] == 1){?>
             <li>
                 <a href="aceitar_cadastro.php">Aceitar Cadastros Novos</a>

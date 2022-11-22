@@ -19,7 +19,7 @@
         <title>Usuários Cadastrados</title>
         
     </head>
-    <body>
+<body>
     <div class = "cabeça">
         <nav class="bg-light border-bottom">
             <div class="">
@@ -48,9 +48,11 @@
             <li>
                 <a href="area_publicacao.php">Área de publicação</a>
             </li>
+            <?php if($_SESSION['perfil'] == 1){?>
             <li>
                 <a href="usuarios_cadastrados.php">Usuários Cadastrados</a>
             </li>
+            <?php }?>
             <?php if($_SESSION['perfil'] == 1){?>
             <li>
                 <a href="aceitar_cadastro.php">Aceitar Cadastros Novos</a>
@@ -64,38 +66,41 @@
     </header> 
     </div> <br/>
            <!--Pega as informações dos usuários cadastrados e cria uma variável para que sejam exibidos-->
-    <div class = "corpo">
-    <?php
+<div class = "corpo">
+        <?php
 
-        $selecionar = "SELECT * FROM usuario";
-        $resultado = mysqli_query ($conexao, $selecionar);
+            $selecionar = "SELECT * FROM usuario";
+            $resultado = mysqli_query ($conexao, $selecionar);
 
-        while($row_usuario = mysqli_fetch_assoc($resultado)){
-    ?>
-    <!--Mostra todos os usuários cadastrados e suas informações-->
+            while($row_usuario = mysqli_fetch_assoc($resultado)){
+        ?>
+        <!--Mostra todos os usuários cadastrados e suas informações-->
     <div class="d">   
-    <?php   
-        echo "<b>Nome: </b>" . $row_usuario['nome'] . "<br>";
-        echo "<b>E-mail: </b>" . $row_usuario['email'] . "<br><br>"; 
-
-    //Todos os "if perfil 1" mostram informações que apenas o administrador vê.
-        if($_SESSION['perfil'] == 1){
-
-    ?>
-    
-    <a href = "#" class = "w-10 btn btn-primary">
-        Editar
-    </a>
-    <a href = "#" class = " w-10 btn btn-primary">
-        Inativar
-    </a>
+        <div class = ""> 
+        <?php   
+            echo "<b>Nome: </b>" . $row_usuario['nome'] . "<br>";
+            echo "<b>E-mail: </b>" . $row_usuario['email'] . "<br><br>"; ?> 
     </div>
-    <br>
+        <?php
+
+        //Todos os "if perfil 1" mostram informações que apenas o administrador vê.
+            if($_SESSION['perfil'] == 1){
+
+        ?>
+    
+        <a href = "#" class = "w-10 btn btn-primary">
+            Editar
+        </a>
+        <a href = "#" class = " w-10 btn btn-primary">
+            Inativar
+        </a>
+    </div><br>
 
     <?php
     }
     }   
     ?>
-    </div>
-    </body>
+    
+</div>
+</body>
 </html>

@@ -7,6 +7,11 @@
 .titulo {
     border-bottom: 31px solid #ceebfb;
     position: relative;
-    width: 110%;
-    right: 4%;
+    width: 104%;
+    right: 2%;
+    align-items: center;
+}
+.volta {
+    position: relative;
+    left: 87%;
 }

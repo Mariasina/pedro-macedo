@@ -43,30 +43,32 @@ crossorigin="anonymous">
     		<ul>
 
         	<!--Mostra o nome do usuário cadastrado--> 
-      			<span class = fs-4> <b> Olá, <?php echo $_SESSION['nome'];?>!<br/> </b>
+      			<span class = fs-6> <b> Olá, <?php echo $_SESSION['nome'];?>!<br/> </b>
        		<!--Todos os "if perfil 1" mostram informações que apenas o administrador vê."-->
         		<?php if($_SESSION['perfil'] == 1){?>
       				<b>  Você é um Administrador. </b> </span>
        			 <?php }?>
         	<!--Links-->
-				<li>
+				<li class = "li">
 					<a href = "perfil.php"> Perfil </a>
 				</li>
-				<li>
+				<li class = "li">
 					<a href="index.php">Página inicial</a>
 				</li>
-				<li>
+				<li class = "li">
 					<a href="area_publicacao.php">Área de publicação</a>
 				</li>
-				<li>
+				<?php if($_SESSION['perfil'] == 1){?>
+				<li class = "li">
 					<a href="usuarios_cadastrados.php">Usuários Cadastrados</a>
 				</li>
+				<?php }?>
 				<?php if($_SESSION['perfil'] == 1){?>
-				<li>
+				<li class = "li">
 					<a href="aceitar_cadastro.php">Aceitar Cadastros Novos</a>
 				</li>
 				<?php }?>
-				<li>
+				<li class = "li">
 				<a href="bd/logout.php">Sair</a> 
 				</li>
         	</ul>

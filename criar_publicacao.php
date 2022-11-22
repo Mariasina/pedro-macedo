@@ -53,6 +53,10 @@
                 </select><br><br>
             <input class="btn btn-primary" value="Enviar Publicação" type = "submit" name="env">
         </form>
+        <a href = "area_publicacao.php" class = "volta">
+                voltar
+         </a>    
     </div>
+
 </body>
 </html>

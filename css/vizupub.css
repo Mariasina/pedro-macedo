@@ -1,0 +1,26 @@
+.titulo {
+    text-align: center;
+    font-size: xx-large;
+    font-family: monospace;
+    margin: 2%;
+    
+}
+
+.corpo {
+    position: relative;
+    text-align: center;
+    margin: 3%;
+    border: 20px solid #ceebfb;
+    border-radius: 20%;
+    height: 70%;
+    padding: 5%;
+}
+
+.desc {
+    text-align: justify;
+}
+
+.voltar {
+    position: relative;
+    left: 30%;
+}

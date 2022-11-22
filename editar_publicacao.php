@@ -9,21 +9,6 @@
     $query->execute();
     $get = $query->get_result();
     $publicacao = $get->fetch_assoc();  
-
-    // $sql = "SELECT * FROM publicacao";
-    // $cod = $_SESSION['cod'];
-    // //$cod = $_GET['cod'];
-    // $sql2 = "SELECT * FROM publicacao where cod = '$cod'";
-    // $result_publicacao = mysqli_query($conexao, $sql2);
-    // $publicacao = mysqli_fetch_array($result_publicacao);
-
-    // $explode = explode('/', $url);
-    // $cod_pub = addslashes($explode['1']);
-	// $query = $conexao->prepare("SELECT * FROM publicacao WHERE cod = ?");
-	// $query->bind_param("s", $cod_pub);
-	// $query->execute();
-	// $get = $query->get_result();
-	// $dados = $get->fetch_assoc();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -32,20 +17,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar</title>
+    <link rel = "stylesheet" href = "css/edit_pub.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+    crossorigin="anonymous">
 </head>
-<body>
+<body> 
+<div class = "titulo">
+    Editando Publicação
+</div>
+<div class = "corpo">
+
     <form action="bd/edit_pub.php?cod=<?php echo $cod;?>" method="post">
-        <input type="hidden" value="<?=$cod;?>" name="cod">
-        <label>Título</label>
-            <input type="text" name="titulo" value="<?php echo $publicacao['titulo'];?>"><br>
-        <label>Imagem</label>
-            <input type="file" name="imagem" ><br>
-        <label>Publicação</label>
-            <textarea name="descricao" rows="5" ><?php echo $publicacao['descricao'];?></textarea><br>
-        <input type="submit" value="Enviar Publicação" name="env">
-        
+
+        <input type="hidden" value="<?=$cod;?>" name="cod" class = "form-control form-control-lg">    
+    <!-- TITULO  -->
+        <label><h1>Título:</h1></label>
+        <input class = "form-control form-control-lg" type="text" name="titulo" placeholder="Título..." value="<?php echo $publicacao['titulo'];?>"> <br>
+           
+    <!-- IMAGEM  -->
+
+        <div class="mb-3">
+
+            <label for="formFile" class="form-label"></label>
+        <h3 class = "texto">Adicione uma imagem para alteração:</h3>
+            <input class="form-control" type="file" id="formFile"> <br> <br>
+        </div>
+
+     <!-- DESCRICAO  -->
+
+     <h3 class = "texto"> Acione uma descrição para alteração.</h3>
+        <textarea class = "form-control form-control-lg" name="descricao" rows="5" cols = "150" placeholder="Descrição...">
+            <?php echo $publicacao['descricao'];?>
+        </textarea><br><br/>
+
+    <!-- ENVIAR  -->
+
+        <input class = "btn btn-primary" type="submit" value="Enviar Alterações" name="env" >
+    
     </form> 
 
+    <!-- Voltar  -->
+
+    <a href = "area_publicacao.php" class = "voltar">
+        <- Voltar
+    </a>
+
+</div
     
 </body>
 </html>

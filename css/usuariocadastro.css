@@ -29,6 +29,7 @@ li{
     margin: 30px;
     padding: 5%;
     position: relative;
+    
 }
 .d {
     border: 15px solid #ceebfb;
@@ -36,4 +37,6 @@ li{
     height: 50%;
     padding: 10px;
     width: 50%;
+    position: static;
+    display: block;
 }

@@ -20,6 +20,7 @@ crossorigin="anonymous">
     <!-- Fim do link do bootstrap -->
     </head>
     <body>
+
  <!-- Começo Cabeçalho Duplo -->
 
 <div class = "cabeça">
@@ -44,9 +45,6 @@ crossorigin="anonymous">
                   <b class = "nome2">Pedro Macedo </b>
               </span>
             </a>
-            <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
-              <input type="search" class="form-control" placeholder="Busca..." aria-label="Search">
-            </form>
           </div>
           
         </header>
