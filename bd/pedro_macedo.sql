@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 18-Nov-2022 às 12:48
--- Versão do servidor: 10.4.24-MariaDB
--- versão do PHP: 8.1.6
+-- Tempo de geração: 22-Nov-2022 às 01:36
+-- Versão do servidor: 10.4.25-MariaDB
+-- versão do PHP: 7.4.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -85,7 +85,6 @@ CREATE TABLE `publicacao` (
 
 INSERT INTO `publicacao` (`cod`, `titulo`, `descricao`, `imagem`, `data`, `hora`, `usuario_cod`, `pagina`) VALUES
 (20, 'fihu', 'lka nha\r\n', '../img/uploads/img_633b53bd3e9f9.jpg', '03/10/2022', '18:27', 7, 0),
-(21, 'fihu', 'lka', '../img/uploads/img_633b5647746f0.png', '03/10/2022', '18:38', 7, 0),
 (27, 'fihu', 'lka', '../img/uploads/img_633c334cd4fca.png', '04/10/2022', '10:21', 7, 0),
 (33, 'fihu', 'lka', '../img/uploads/img_633d678922e78.png', '05/10/2022', '08:16', 7, 0),
 (34, 'fihu', 'lkalo', '../img/uploads/img_633d67d14f810.png', '05/10/2022', '08:17', 7, 0),
@@ -103,11 +102,7 @@ INSERT INTO `publicacao` (`cod`, `titulo`, `descricao`, `imagem`, `data`, `hora`
 (49, 'tilt', 'dd', '', '16/11/2022', '11:04', 7, 0),
 (50, 'tilt', 'dd', '', '16/11/2022', '11:05', 7, 1),
 (51, 'tilt', 'dd', '', '16/11/2022', '11:06', 7, 1),
-(52, 'tiltuuuu', 'ddiii', '', '16/11/2022', '11:08', 7, 1),
-(53, 'tiltuuuu', 'ddiii', '', '16/11/2022', '11:10', 7, 1),
-(54, '1', '1', '', '16/11/2022', '11:12', 7, 0),
-(55, '1 sim', '1', '', '16/11/2022', '11:12', 7, 1),
-(56, '4', '', '', '16/11/2022', '11:18', 7, 4);
+(52, 'tiltuuuu', 'ddiii', '', '16/11/2022', '11:08', 7, 1);
 
 -- --------------------------------------------------------
 
