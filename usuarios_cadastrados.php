@@ -67,11 +67,6 @@
     <div class = "corpo">
     <?php
 
-    /*if(isset($_SESSION['msg'])){
-    echo $_SESSION['msg'];
-    unset($_SESSION['msg']);
-    }*/
-
         $selecionar = "SELECT * FROM usuario";
         $resultado = mysqli_query ($conexao, $selecionar);
 
