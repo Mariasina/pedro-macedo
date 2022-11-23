@@ -12,7 +12,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Área de publicação</title>
         <link rel = "stylesheet" href = "css/todaspub.css">
-        <link rel = "stylesheet" href = "css/popup.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
@@ -100,9 +99,9 @@
                     <a href="editar_publicacao.php?cod=<?php echo $row_usuario['cod'];?>" class = "w-10 btn btn-lg btn-primary rounded-5">
                         Editar
                     </a>
-                    <a href="bd/excluir_pub.php?cod=<?php echo $row_usuario['cod'];?>" name ="excluir" class = "w-10 btn btn-lg btn-primary rounded-5">
-                        Excluir 
-                    </a>
+                    <a href = "bd/excluir_pub.php?cod=<?php echo $row_usuario['cod'];?>" class = "w-10 btn btn-lg btn-primary rounded-5">
+                        Excluir
+                    </a>    
                     </div>
                     <div>
                     <?php $pagina = $row_usuario['pagina'];?>

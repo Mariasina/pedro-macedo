@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    include('bd/conexao.php'); 
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
@@ -20,6 +24,55 @@ crossorigin="anonymous">
     <!-- Fim do link do bootstrap -->
     </head>
     <body>
+<!--Painel de edição-->
+<?php if (isset($_SESSION['cod'])){?>
+<div class = "cabeça">
+        <nav class="bg-light border-bottom">
+            <div class="">
+                    Painel de Edição
+            </div>
+        </nav>
+</div>
+<div class="cor">
+    <header class = "py-2 mg-2 border-bottom">
+    	<nav id = "menu-h">
+    		<ul>
+
+        	<!--Mostra o nome do usuário cadastrado--> 
+      			<span class = fs-6> <b> Olá, <?php echo $_SESSION['nome'];?>!<br/> </b>
+       		<!--Todos os "if perfil 1" mostram informações que apenas o administrador vê."-->
+        		<?php if($_SESSION['perfil'] == 1){?>
+      				<b>  Você é um Administrador. </b> </span>
+       			 <?php }?>
+        	<!--Links-->
+				<li class = "li">
+					<a href = "perfil.php"> Perfil </a>
+				</li>
+				<li class = "li">
+					<a href="index.php">Página inicial</a>
+				</li>
+				<li class = "li">
+					<a href="area_publicacao.php">Área de publicação</a>
+				</li>
+				<?php if($_SESSION['perfil'] == 1){?>
+				<li class = "li">
+					<a href="usuarios_cadastrados.php">Usuários Cadastrados</a>
+				</li>
+				<?php }?>
+				<?php if($_SESSION['perfil'] == 1){?>
+				<li class = "li">
+					<a href="aceitar_cadastro.php">Aceitar Cadastros Novos</a>
+				</li>
+				<?php }?>
+				<li class = "li">
+				<a href="bd/logout.php">Sair</a> 
+				</li>
+        	</ul>
+    	</nav>
+    </header> 
+</div> <br/>
+<?php } ?>
+<!--Fim painel de edição-->	
  <!-- Começo Cabeçalho Duplo -->
 
 <div class = "cabeça">
