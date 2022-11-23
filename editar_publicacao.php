@@ -46,7 +46,7 @@
 
      <!-- DESCRICAO  -->
 
-     <h3 class = "texto"> Acione uma descrição para alteração.</h3>
+     <h3 class = "texto"> Adicione uma descrição para alteração.</h3>
         <textarea class = "form-control form-control-lg" name="descricao" rows="5" cols = "150" placeholder="Descrição...">
             <?php echo $publicacao['descricao'];?>
         </textarea><br><br/>

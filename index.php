@@ -226,14 +226,14 @@ crossorigin="anonymous">
       </div>
     </div>
     <div class="carousel-item" data-bs-interval="2000">
-      <img src="..." class="d-block w-100" alt="...">
+      <img src="https://www.hypeness.com.br/1/2019/09/escla4.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>Segunda imagem do carrossel</h5>
         <p>algum texto pra segunda imagem do carrossel.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+      <img src="https://img.freepik.com/vetores-gratis/mao-desenhada-de-volta-ao-fundo-da-escola_23-2149056177.jpg?w=2000" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>terceira imagem do carrossel</h5>
         <p>alguma descricao para a terceira imagem do carrossel.</p>
@@ -261,8 +261,113 @@ crossorigin="anonymous">
 	<section class="columns">
 		
 		<div class="column1">
-			<h2>1º Titulo de noticiazinha</h2>
-			<p> comecinho da noticia</p>
+			<?php  
+                //pega as informações do bd
+                $selecionar = "SELECT * FROM publicacao WHERE cod = 41";
+                //cria uma variavel para pegar as informações
+                $resultado = mysqli_query ($conexao, $selecionar);
+                
+                //variável para mostrar as informações se elas forem pegas com sucesso
+                while($row_usuario = mysqli_fetch_assoc($resultado)){ ?>
+            <div class = "pub">
+            <div class = "descricao">
+            <?php
+
+                echo "<h3>" . $row_usuario['titulo'] . "</h3>"; ?>
+            </div>
+                <div class = "descricao">
+                <?php 
+                echo "" . $row_usuario['descricao']; ?>
+                </div>
+                <?php
+                if  ((isset($row_usuario['imagem'])) &&  (!empty($row_usuario['imagem']))){ ?>
+                <img src="pedro_macedo/<?php echo $row_usuario['imagem'];?>">  <?php }?>  
+            
+                    <br/>
+                    <div>
+                    <?php $pagina = $row_usuario['pagina'];?>
+                    Essa publicação se encontra na página: 
+                    <?php
+                    switch ($pagina) {
+                        case "1": {
+                        echo "Noticias <br>";
+                        break;
+                        }
+                        case "2": { 
+                            echo "Fundamental <br>";
+                            break;
+                        }
+                        case "3": {
+                            echo "Médio <br>";
+                        break;
+                        }
+                        case "4": {
+                            echo "Profissionalizante <br>";
+                        break;
+                        }
+                        case "5": {
+                            echo "CELEM <br>";
+                        break;
+                        }
+                        case "6": {
+                            echo "Direção <br>";
+                        break;
+                        }
+                        case "7": {
+                            echo "Secretaria <br>";
+                        break;
+                        }
+                        case "8": {
+                            echo "Equipe Multidisciplinar <br>";
+                        break;
+                        }
+                        case "9": {
+                            echo "Espaço do Professor <br>";
+                        break;
+                        }
+                        case "10": {
+                            echo "Colégio <br>";
+                        break;
+                        }
+                        case "11": {
+                            echo "Professores <br>";
+                        break;
+                        }
+                        case "12": {
+                            echo "Eventos <br>";
+                        break;
+                        }
+                        case "13": {
+                            echo "Cursos <br>";
+                        break;
+                        }
+                        case "14": {
+                            echo "Calendario 2022 <br>";
+                        break;
+                        }
+                        case "15": {
+                            echo "Material para 6º anos <br>";
+                        break;
+                        }
+                        case "16": {
+                            echo "Biblioteca CPM <br>";
+                        break;
+                        }
+                
+                    }?>
+                    </div>
+                    <div class = "hora">
+                <?php
+                    
+                echo "" . $row_usuario['data'] . " - " ;
+                echo "" . $row_usuario['hora'];
+                
+            ?>
+                    </div>
+            </div>
+            <?php
+            ;}
+            ?>  
 		</div>
 		
 		<div class="column2">
