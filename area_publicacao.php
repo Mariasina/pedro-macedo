@@ -99,7 +99,7 @@
                     <a href="editar_publicacao.php?cod=<?php echo $row_usuario['cod'];?>" class = "w-10 btn btn-lg btn-primary rounded-5">
                         Editar
                     </a>
-                    <a href = "bd/excluir_pub.php?cod=<?php echo $row_usuario['cod'];?>" class = "w-10 btn btn-lg btn-primary rounded-5">
+                    <a href = excluir_pub.php?cod=<?php echo $row_usuario['cod'];?>" class = "w-10 btn btn-lg btn-primary rounded-5">
                         Excluir
                     </a>    
                     </div>
