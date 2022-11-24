@@ -180,9 +180,11 @@ crossorigin="anonymous">
 <!-- Fim Menu-->
 <!--Publicações-->
 <div>
-	<?php  
+	<?php 
+	 	
         //pega as informações do bd
-        $selecionar = "SELECT * FROM publicacao ORDER BY cod DESC";
+		$pagina = 1;
+        $selecionar = "SELECT * FROM publicacao WHERE pagina = $pagina ORDER BY cod DESC";
          //cria uma variavel para pegar as informações
          $resultado = mysqli_query ($conexao, $selecionar);
                 
@@ -234,7 +236,8 @@ crossorigin="anonymous">
             </div>
         </div>
     <?php
-		}
+	}
+		
     ?>  
 </div>
 <!-- Começo Rodapé-->

@@ -9,6 +9,15 @@
         $titulo = $_POST['titulo'];
         $descricao = $_POST['descricao'];
         $codi = $cod;
+        $img = $_FILES['imagem'];
+
+        $uploaddir = '../img/uploads/';		
+        $uploaddirN = 'img/uploads/';
+        if (isset($_FILES['imagem']) && !empty($_FILES['imagem']['name'])) {
+        $criandoidimg = uniqid('img_').".".pathinfo($_FILES['imagem']['name'], PATHINFO_EXTENSION);
+        $uploadfile = $uploaddir.$criandoidimg;
+        $uploadfileN = $uploaddir.$criandoidimg;
+        }
 
         //pegando as informações do bd
         $sql = "UPDATE publicacao SET titulo = '$titulo', descricao = '$descricao' WHERE cod = '$codi'";
