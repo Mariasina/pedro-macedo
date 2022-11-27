@@ -17,7 +17,7 @@
 <body>
     <?php
         $cod = $_GET['cod'];
-        $selecionar = "SELECT * FROM publicacao WHERE cod = $cod";
+        $selecionar = "SELECT * FROM publicacao WHERE cod = '$cod'";
         //cria uma variavel para pegar as informações
         $resultado = mysqli_query ($conexao, $selecionar);
                 

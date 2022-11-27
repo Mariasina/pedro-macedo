@@ -210,13 +210,14 @@ crossorigin="anonymous">
 		<?php echo $row_usuario['imagem']; } ?>  ">   <br/>
 
 <!--botões-->
+			<div class = "acoes">
 				<a href="vizualizar_publicacao.php?cod=<?php echo $row_usuario['cod'];?>" class = "w-10 btn btn-lg btn-primary rounded-5">
 				Visualizar
-				</a><br>
+				</a>
 	<?php 
 		if (isset($_SESSION['cod'])){
 	?>
-			<div class = "acoes">
+			
 <!--php para criar o cod da pub na url-->
 				
 				<a href="editar_publicacao.php?cod=<?php echo $row_usuario['cod'];?>" class = "w-10 btn btn-lg btn-primary rounded-5">
@@ -226,10 +227,10 @@ crossorigin="anonymous">
 				Excluir
 				</a>
 			</div>
-
+			
 			<div class = "hora">
     <?php }
-                    
+        echo "<br>";    
 		echo "" . $row_usuario['data'] . " - " ;
 		echo "" . $row_usuario['hora'];
                 

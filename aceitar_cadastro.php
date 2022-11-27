@@ -60,6 +60,7 @@
     </nav>
     </header> 
     </div> </br>
+        <h1>Cadastros Pendendes</h1>
         <?php
         $pendencia = 1;
         $selecionar = "SELECT * FROM usuario WHERE pendencia = $pendencia";
@@ -68,20 +69,23 @@
         //variável para mostrar as informações se elas forem pegas com sucesso
         while($row_usuario = mysqli_fetch_assoc($resultado)){
         ?>
-        <h1>Cadastros Pendendes</h1>
+        
         <div class="d">   
         <div class = ""> 
         <?php   
             echo "<b>Nome: </b>" . $row_usuario['nome'] . "<br>";
             echo "<b>E-mail: </b>" . $row_usuario['email'] . "<br><br>"; 
-        }?> 
+        ?> 
         </div>
         <div>
-        <a href="aceitar_cad.php?cod=<?php echo $row_usuario['cod'];?>" name ="aceitar" class = "w-10 btn btn-lg btn-primary rounded-5">
+        <a href="bd/aceitar_cad.php?cod=<?php echo $row_usuario['cod'];?>" class = "w-10 btn btn-lg btn-primary rounded-5">
             Aceitar
         </a>
-            <input class="btn btn-primary" value="Negar" type = "submit" name="negar">
+        <a href="bd/negar_cad.php?cod=<?php echo $row_usuario['cod'];?>" class = "w-10 btn btn-lg btn-primary rounded-5">
+            Negar
+        </a>
         </div>
     </div>
+    <?php }?>
     </body>
 </html>

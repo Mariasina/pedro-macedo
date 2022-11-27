@@ -91,7 +91,7 @@
         <a href="editar_usuario.php?cod=<?php echo $row_usuario['cod'];?>" class = "w-10 btn btn-lg btn-primary rounded-5">
             Editar
         </a>
-        <a href = "#" class = " w-10 btn btn-primary">
+        <a href = "inativar_usu.php?cod=<?php echo $row_usuario['cod'];?>" class = " w-10 btn btn-lg btn-primary rounded-5">
             Inativar
         </a>
     </div><br>
