@@ -25,3 +25,16 @@ li{
     position: relative;
     left: 13%;
 }
+
+.corpo {
+    margin: 30px;
+    padding: 5%;
+    position: relative;
+}
+.d {
+    border: 20px solid #ceebfb;
+    border-radius: 20%;
+    height: 50%;
+    padding: 10px;
+    width: 50%;
+}

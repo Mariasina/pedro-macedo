@@ -210,14 +210,15 @@ crossorigin="anonymous">
 		<?php echo $row_usuario['imagem']; } ?>  ">   <br/>
 
 <!--botões-->
+				<a href="vizualizar_publicacao.php?cod=<?php echo $row_usuario['cod'];?>" class = "w-10 btn btn-lg btn-primary rounded-5">
+				Visualizar
+				</a><br>
 	<?php 
 		if (isset($_SESSION['cod'])){
 	?>
 			<div class = "acoes">
 <!--php para criar o cod da pub na url-->
-				<a href="vizualizar_publicacao.php?cod=<?php echo $row_usuario['cod'];?>" class = "w-10 btn btn-lg btn-primary rounded-5">
-				Visualizar
-				</a>
+				
 				<a href="editar_publicacao.php?cod=<?php echo $row_usuario['cod'];?>" class = "w-10 btn btn-lg btn-primary rounded-5">
 				Editar
 				</a>
@@ -229,8 +230,8 @@ crossorigin="anonymous">
 			<div class = "hora">
     <?php }
                     
-    	echo "" . $row_usuario['data'] . " - " ;
-        echo "" . $row_usuario['hora'];
+		echo "" . $row_usuario['data'] . " - " ;
+		echo "" . $row_usuario['hora'];
                 
     ?>
             </div>
@@ -259,7 +260,7 @@ crossorigin="anonymous">
 								<li class = "tira"><a href = "historiacolegio.php">História</a></li>
 								<li class = "tira"><a href = "https://www.facebook.com/pages/Col%C3%A9gio-Estadual-Pedro-Macedo/124373407573346">Facebook</a></li>
 								<li>
-									<a href = "login.html" >
+									<a href = "login.php" >
 										Apenas moderador
 									</a>
 								</li>

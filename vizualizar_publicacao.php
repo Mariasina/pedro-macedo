@@ -33,9 +33,13 @@
        <h4><b> Descrição: </b></h4> <BR> <P>
         <?php echo $publicacao['descricao'] . "<br>";?> </div> </p> 
         <?php if  ((isset($publicacao['imagem'])) &&  (!empty($publicacao['imagem']))){ ?>
-            <img src="pedro_macedo/<?php echo $publicacao['imagem'];} ?>"/><br>
+            <img src="pedro_macedo/<?php echo $publicacao['imagem'];} ?>"><br>
         
         <!--botões-->
+        <?php
+        if (isset($_SESSION['cod'])){ 
+        ?>
+		
         <div class = "acoes"> <br>
             <!--php para criar o cod da pub na url-->
             <a href="editar_publicacao.php?cod=<?php echo $publicacao['cod'];?>" class = "w-10 btn btn-lg btn-primary rounded-5">
@@ -115,15 +119,18 @@
               break;
             }
     
-          }?>
-        </div> <br>
+          }
+        }?>
+         <br>
         <?php
-        echo $publicacao['data'] . " - ";
-        echo $publicacao['hora'];
+    	echo  $publicacao['data'] . " - " ;  
+      echo  $publicacao['hora'];
+      
         ?>
         <a href = "area_publicacao.php" class = "voltar">
           <- Voltar
         </a>
+        </div>
     </div>
 </body>
 </html>

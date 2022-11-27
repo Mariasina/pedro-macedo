@@ -270,7 +270,7 @@ Os cursos subseqüentes estão autorizados sob a resolução 3250/07 de 23/07/07
 								<li class = "tira"><a href = "historiacolegio.php">História</a></li>
 								<li class = "tira"><a href = "https://www.facebook.com/pages/Col%C3%A9gio-Estadual-Pedro-Macedo/124373407573346">Facebook</a></li>
 								<li>
-									<a href = "login.html" >
+									<a href = "login.php" >
 										Apenas moderador
 									</a>
 								</li>

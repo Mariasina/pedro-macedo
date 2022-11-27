@@ -4,7 +4,7 @@
     
     /*//redireciona para área de login se nome e senha estiverem vazias
     if (!empty($_POST) AND (empty($_POST['email']) OR empty($_POST['senha']))) {
-        header("Location:../login.html"); 
+        header("Location:../login.php"); 
         exit();
     }*/
 
@@ -27,13 +27,16 @@
         $_SESSION['perfil'] = $dados['perfil_cod'];
         header('location:../perfil.php');
     } 
+
     //redirecionamento se o usuário for inválido  
     else {
+        echo "<script type='javascript'>alert('Usuário Inválido');";
+        echo "javascript:window.location='login.php';</script>";
         /*unset ($_SESSION['login']);
         unset ($_SESSION['senha']);
         echo $login;
         echo $senha;*/
-        header('Location:login.html');
+        header('Location:../login.php');
     exit();
     }
 

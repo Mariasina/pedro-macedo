@@ -1,6 +1,6 @@
 <?php
     session_start();
-    include('bd/verifica_login.php');   
+    include('bd/verifica_login.php');  
 ?>
 
 <!DOCTYPE html>
@@ -22,11 +22,12 @@
             </div>
         </nav>
     </div>
+    
     <div class="cor">
     <header class = "py-2 mg-2 border-bottom">
     <nav id = "menu-h">
     <ul>
-
+       
         <!--Mostra o nome do usuário cadastrado--> 
       <span class = fs-4> <b> Olá, <?php echo $_SESSION['nome'];?>!<br/> </b>
         <!--Todos os "if perfil 1" mostram informações que apenas o administrador vê."-->
@@ -77,11 +78,12 @@
     <div class="form-floating">
       <!-- <input type="password" name="senha" class="form-control w-100" id="floatingPassword" placeholder="Password"> -->
     </div><br>
-    <button class="w-50 btn btn-lg btn-primary" type="submit">
+    <a href="editar_usuario_perfil.php?cod=<?php echo $_SESSION['cod'];?>" class = "w-10 btn btn-lg btn-primary rounded-5">
       Editar
-    </button>
+    </a>
   </form>
 </main>
 </div>
+<?php ?>
 </body>
 </html>

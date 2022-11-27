@@ -2,7 +2,7 @@
     session_start();
     include("conexao.php");
 
-    //if para editar a publicção apenas se ela foi enviada
+    //if para editar a publicação apenas se ela foi enviada
     if (isset($_POST['env'])){
         //criando as variáves para criar uma postagem
         $cod = $_GET['cod'];
@@ -12,10 +12,10 @@
         $img = $_FILES['imagem'];
         $pagina = $_POST['paginas'];
 
+        if (isset($_FILES['imagem']) && !empty($_FILES['imagem']['name'])) {
         $uploaddir = '../img/uploads/';		
         $uploaddirN = 'img/uploads/';
         
-        if (isset($_FILES['imagem']) && !empty($_FILES['imagem']['name'])) {
         $criandoidimg = uniqid('img_').".".pathinfo($_FILES['imagem']['name'], PATHINFO_EXTENSION);
         $uploadfile = $uploaddir.$criandoidimg;
         $uploadfileN = $uploaddir.$criandoidimg;

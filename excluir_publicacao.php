@@ -15,6 +15,15 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
+    <?php
+        $cod = $_GET['cod'];
+        $selecionar = "SELECT * FROM publicacao WHERE cod = $cod";
+        //cria uma variavel para pegar as informações
+        $resultado = mysqli_query ($conexao, $selecionar);
+                
+        //variável para mostrar as informações se elas forem pegas com sucesso
+        while($row_usuario = mysqli_fetch_assoc($resultado)){ 
+    ?>
     
     <div class = "corpo">
         <h1>
@@ -29,6 +38,6 @@
             </a>
         </div>
     </div>
-    
+    <?php } ?>
 </body>
 </html>

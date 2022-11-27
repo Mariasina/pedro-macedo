@@ -402,7 +402,7 @@ crossorigin="anonymous">
 								<li><a href = "historiacolegio.php">História</a></li>
 								<li><a href = "https://www.facebook.com/pages/Col%C3%A9gio-Estadual-Pedro-Macedo/124373407573346">Facebook</a></li>
 								<li>
-									<a href = "login.html" >
+									<a href = "login.php" >
 										Apenas moderador
 									</a>
 								</li>
