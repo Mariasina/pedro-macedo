@@ -33,7 +33,7 @@
 <body class="text-center">
   <div class="corpo"> 
 <main class="form-signin w-50 m-auto">
-  <form action="bd/login_.php" method="POST">
+  <form action="" method="POST">
     <!-- logo pedro macedo -->
     <a href = "index.php">
        <img class="mb-4" src="img/pedromacedo.png" alt="" width="100" height="100">
@@ -53,13 +53,14 @@
         Senha
       </label>
     </div><br>
-    <button class="w-50 btn btn-lg btn-primary" type="submit">
-      Entrar
-    </button>
+    <input class="w-50 btn btn-lg btn-primary" name="env" type="submit" value="Entrar">
+    
     <a href="cadastro.html"><p class="mt-5 mb-3 text-muted">
        Cadastre-se
     </p></a>
   </form>
+
+  <?php include_once("bd/login_.php");?>
 </main>
 </div>
 

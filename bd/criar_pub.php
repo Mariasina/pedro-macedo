@@ -14,9 +14,10 @@
 
     $uploaddir = '../img/uploads/';		
     $uploaddirN = 'img/uploads/';
+    
     if (isset($_FILES['imagem']) && !empty($_FILES['imagem']['name'])) {
     $criandoidimg = uniqid('img_').".".pathinfo($_FILES['imagem']['name'], PATHINFO_EXTENSION);
-	$uploadfile = $uploaddir.$criandoidimg;
+	  $uploadfile = $uploaddir.$criandoidimg;
     $uploadfileN = $uploaddir.$criandoidimg;
     }
     

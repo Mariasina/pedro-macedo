@@ -33,7 +33,7 @@
        <h4><b> Descrição: </b></h4> <BR> <P>
         <?php echo $publicacao['descricao'] . "<br>";?> </div> </p> 
         <?php if  ((isset($publicacao['imagem'])) &&  (!empty($publicacao['imagem']))){ ?>
-            <img src="pedro_macedo/<?php echo $publicacao['imagem'];} ?>"><br>
+            <img src="pedro_macedo/<?php echo $publicacao['imagem'];?>"/><?php }?><br>
         
         <!--botões-->
         <?php
@@ -127,9 +127,9 @@
       echo  $publicacao['hora'];
       
         ?>
-        <a href = "area_publicacao.php" class = "voltar">
+        <!-- <a href = "area_publicacao.php" class = "voltar">
           <- Voltar
-        </a>
+        </a> -->
         </div>
     </div>
 </body>

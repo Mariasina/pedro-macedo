@@ -260,7 +260,7 @@ crossorigin="anonymous">
 			
 	<section class="columns">
 		
-		<div class="column1">
+		<!--<div class="column1">
 			<?php  
                 //pega as informações do bd
                 $selecionar = "SELECT * FROM publicacao WHERE cod = 41";
@@ -378,7 +378,36 @@ crossorigin="anonymous">
 	  <div class="column3">
 			<h2>3º Titulo de uma outra noticiazinha </h2>
 			<p> comecinho da terceira noticiazinha e final das noticias que aparecem</p>
-		</div>
+		</div>-->
+
+
+		<?php 
+                    $sql = $conexao->prepare("SELECT * FROM publicacao ORDER BY cod DESC");
+                    $sql->execute();
+                    $get = $sql->get_result();
+                    $total = $get->num_rows;
+
+                if ($total <= 0){
+                    echo "<div class='alerta-amarelo'>Nenhum artigo encontrado!</div>";
+                } else { 
+                    for ($i=0; $i < 3; $i++){ 
+                        $dados = $get->fetch_array();
+                        $idPostador = $dados['usuario_cod'];
+                        $query =  $conexao->prepare("SELECT * FROM usuario WHERE cod = ?");
+                        $query -> bind_param("s", $idPostador);
+                        $query -> execute();
+                        $dadosU = $query->get_result()->fetch_assoc();
+                    ?>
+						<div class="column1">
+						<?php echo $dados['titulo'];
+							  echo $dados['descricao'];
+							if  ((isset($dados['imagem'])) &&  (!empty($dados['imagem']))){ ?>
+							<img src="pedro_macedo/<?php echo $dados['imagem'];?>">  <?php }?>
+						?>
+						
+						</div>
+                    
+                <?php }}?>
 		
 	</section>	
 	</div>

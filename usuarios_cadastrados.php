@@ -64,22 +64,28 @@
         </ul>
     </nav>
     </header> 
-    </div> <br/>
+    </div> 
            <!--Pega as informações dos usuários cadastrados e cria uma variável para que sejam exibidos-->
 <div class = "corpo">
+        <h1>Usuários Cadastrados</h1>
         <?php
 
-            $selecionar = "SELECT * FROM usuario";
+            $selecionar = "SELECT * FROM usuario WHERE pendencia = 0";
             $resultado = mysqli_query ($conexao, $selecionar);
 
             while($row_usuario = mysqli_fetch_assoc($resultado)){
+            $status = $row_usuario['status'];
         ?>
         <!--Mostra todos os usuários cadastrados e suas informações-->
     <div class="d">   
         <div class = ""> 
         <?php   
             echo "<b>Nome: </b>" . $row_usuario['nome'] . "<br>";
-            echo "<b>E-mail: </b>" . $row_usuario['email'] . "<br><br>"; ?> 
+            echo "<b>E-mail: </b>" . $row_usuario['email'] . "<br>"; 
+            if ($status == 1){
+                echo "Inativado";
+            }
+            ?> 
     </div>
         <?php
 
@@ -91,9 +97,17 @@
         <a href="editar_usuario.php?cod=<?php echo $row_usuario['cod'];?>" class = "w-10 btn btn-lg btn-primary rounded-5">
             Editar
         </a>
-        <a href = "inativar_usu.php?cod=<?php echo $row_usuario['cod'];?>" class = " w-10 btn btn-lg btn-primary rounded-5">
+        <?php if ($status == 0){?>
+        <a href = "bd/inativar_usu.php?cod=<?php echo $row_usuario['cod'];?>" class = " w-10 btn btn-lg btn-primary rounded-5">
             Inativar
         </a>
+        <?php }?>
+
+        <?php if ($status == 1){?>
+        <a href = "bd/ativar_usu.php?cod=<?php echo $row_usuario['cod'];?>" class = " w-10 btn btn-lg btn-primary rounded-5">
+            Ativar
+        </a>
+        <?php }?>
     </div><br>
 
     <?php

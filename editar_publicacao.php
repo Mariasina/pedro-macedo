@@ -41,7 +41,7 @@
 
             <label for="formFile" class="form-label"></label>
         <h3 class = "texto">Adicione uma imagem para alteração:</h3>
-            <input class="form-control" type="file" name="imagem" id="formFile" value="<?php echo $publicacao['imagem'];?>"> <br> <br>
+            <input class="form-control" accept="image/*" type="file" name="imagem" id="formFile"> <br> <br>
         </div>
 
      <!-- DESCRICAO  -->

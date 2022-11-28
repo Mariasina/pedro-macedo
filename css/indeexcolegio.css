@@ -304,6 +304,11 @@ header {
 	margin: 5px 0;
 }
 
+img {
+    width: 400px;
+    border-radius: 4%;
+}
+
 .column1 {
 	background-color: rgb(206, 182, 255);
 	flex: 1;

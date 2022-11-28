@@ -29,7 +29,7 @@
             <div class = "titulo">
             </div><br/>
             <label class = "img">
-                <input class="form-control" type="file" name="imagem" id="formFile"><br>
+                <input class="form-control" accept="image/*" type="file" name="imagem" id="formFile"><br>
             <label class = "pub"></label>
                     <textarea class = "form-control form-control-lg" name="descricao" rows="5" cols = "150" placeholder="Descrição..."></textarea><br><br/>
                 <div>Selecione a página onde a publicação será cadastrada:</div>

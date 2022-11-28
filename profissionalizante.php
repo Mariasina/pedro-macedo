@@ -206,7 +206,7 @@ crossorigin="anonymous">
         if  ((isset($row_usuario['imagem'])) &&  (!empty($row_usuario['imagem']))){ 
 	?>
         <img src="pedro_macedo/
-		<?php echo $row_usuario['imagem']; } ?>  ">   <br/>
+		<?php echo $row_usuario['imagem']; ?>  "> <?php }?>  <br/>
 
 <!--botões-->
 	<?php 

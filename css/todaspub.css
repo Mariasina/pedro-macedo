@@ -45,7 +45,7 @@ img {
     border-radius: 4%;
 }
 .descricao {
-    text-align: center;
+    text-align: justify;
 }
 .acoes {
     position: relative;

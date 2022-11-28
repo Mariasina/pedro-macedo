@@ -12,10 +12,10 @@
         $img = $_FILES['imagem'];
         $pagina = $_POST['paginas'];
 
-        if (isset($_FILES['imagem']) && !empty($_FILES['imagem']['name'])) {
         $uploaddir = '../img/uploads/';		
         $uploaddirN = 'img/uploads/';
-        
+
+        if (isset($_FILES['imagem']) && !empty($_FILES['imagem']['name'])) {
         $criandoidimg = uniqid('img_').".".pathinfo($_FILES['imagem']['name'], PATHINFO_EXTENSION);
         $uploadfile = $uploaddir.$criandoidimg;
         $uploadfileN = $uploaddir.$criandoidimg;
@@ -90,7 +90,7 @@
           }
 
         //pegando as informações do bd
-        $sql = "UPDATE publicacao SET titulo = '$titulo', descricao = '$descricao', imagem = '$img', pagina = '$pagina' WHERE cod = '$codi'";
+        $sql = "UPDATE publicacao SET titulo = '$titulo', descricao = '$descricao', pagina = '$pagina' WHERE cod = '$codi'";
 
         //variável para concluir a edição
         $resultado = mysqli_query($conexao, $sql);

@@ -4,7 +4,7 @@
 
     $cod = $_GET['cod'];
 
-    $sql = "UPDATE usuario SET status = 1 WHERE cod = '$cod'";
+    $sql = "UPDATE usuario SET status = 0 WHERE cod = '$cod'";
 
     $resultado = mysqli_query($conexao, $sql);
 
