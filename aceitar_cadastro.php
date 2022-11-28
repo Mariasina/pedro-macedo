@@ -16,7 +16,7 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     </head>
-    <body>
+<body>
     <div class = "cabeça">
         <nav class="bg-light border-bottom">
             <div class="">
@@ -24,68 +24,70 @@
             </div>
         </nav>
     </div>
-    <div class="cor">
+<div class="cor">
     <header class = "py-2 mg-2 border-bottom">
-    <nav id = "menu-h">
+        <nav id = "menu-h">
     <ul>
 
-        <!--Mostra o nome do usuário cadastrado--> 
-      <span class = fs-4> <b> Olá, <?php echo $_SESSION['nome'];?>!<br/> </b>
-        <!--Todos os "if perfil 1" mostram informações que apenas o administrador vê."-->
-        <?php if($_SESSION['perfil'] == 1){?>
-      <b>  Você é um Administrador. </b> </span>
-        <?php }?>
+    <!--Mostra o nome do usuário cadastrado--> 
+    <span class = fs-4> <b> Olá, <?php echo $_SESSION['nome'];?>!<br/> </b>
+    <!--Todos os "if perfil 1" mostram informações que apenas o administrador vê."-->
+    <?php if($_SESSION['perfil'] == 1){?>
+        <b>  Você é um Administrador. </b> </span>
+    <?php }?>
         <!--Links-->
-            <li>
-                <a href = "perfil.php"> Perfil </a>
-            </li>
-            <li>
-                <a href="index.php">Página inicial</a>
-            </li\>
-            <li>
-                <a href="area_publicacao.php">Área de publicação</a>
-            </li>
-            <li>
-                <a href="usuarios_cadastrados.php">Usuários Cadastrados</a>
-            </li>
-            <?php if($_SESSION['perfil'] == 1){?>
-            <li>
-                <a href="aceitar_cadastro.php">Aceitar Cadastros Novos</a>
-            </li>
-            <?php }?>
-            <li>
+        <li>
+            <a href = "perfil.php"> Perfil </a>
+        </li>
+        <li>
+            <a href="index.php">Página inicial</a>
+        </li\>
+        <li>
+            <a href="area_publicacao.php">Área de publicação</a>
+        </li>
+        <li>
+            <a href="usuarios_cadastrados.php">Usuários Cadastrados</a>
+        </li>
+    <?php if($_SESSION['perfil'] == 1){?>
+        <li>
+            <a href="aceitar_cadastro.php">Aceitar Cadastros Novos</a>
+        </li>
+    <?php }?>
+        <li>
             <a href="bd/logout.php">Sair</a> 
-            </li>
-        </ul>
-    </nav>
+        </li>
+    </ul>
+        </nav>
     </header> 
-    </div> </br>
-        <h1>Cadastros Pendendes</h1>
-        <?php
-        $pendencia = 1;
-        $selecionar = "SELECT * FROM usuario WHERE pendencia = $pendencia";
-        $resultado = mysqli_query ($conexao, $selecionar);
+</div> </br>
+<!-- Corpo da página -->
+    <h1 class = "titulo">Cadastros Pendendes</h1>
+<?php
+    $pendencia = 1;
+    $selecionar = "SELECT * FROM usuario WHERE pendencia = $pendencia";
+    $resultado = mysqli_query ($conexao, $selecionar);
                 
-        //variável para mostrar as informações se elas forem pegas com sucesso
-        while($row_usuario = mysqli_fetch_assoc($resultado)){
-        ?>
-        
-        <div class="d">   
-        <div class = ""> 
-        <?php   
-            echo "<b>Nome: </b>" . $row_usuario['nome'] . "<br>";
-            echo "<b>E-mail: </b>" . $row_usuario['email'] . "<br><br>"; 
-        ?> 
-        </div>
-        <div>
+//variável para mostrar as informações se elas forem pegas com sucesso
+    while($row_usuario = mysqli_fetch_assoc($resultado)){
+?>
+    <div class = "corpo">   
+    <div class="d">    
+<?php   
+    echo "<b>Nome: </b>" . $row_usuario['nome'] . "<br>";
+    echo "<b>E-mail: </b>" . $row_usuario['email'] . "<br><br>"; 
+?> 
         <a href="bd/aceitar_cad.php?cod=<?php echo $row_usuario['cod'];?>" class = "w-10 btn btn-lg btn-primary rounded-5">
             Aceitar
         </a>
         <a href="bd/negar_cad.php?cod=<?php echo $row_usuario['cod'];?>" class = "w-10 btn btn-lg btn-primary rounded-5">
             Negar
         </a>
-        </div>
+    
     </div>
-    <?php }?>
-    </body>
+    </div>
+    
+<?php }?>
+
+
+</body>
 </html>

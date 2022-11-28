@@ -78,12 +78,13 @@
         <input class = "btn btn-primary" type="submit" value="Enviar Alterações" name="env" >
     
     </form> 
+    <br>
 
     <!-- Voltar  -->
 
-    <a href = "area_publicacao.php" class = "voltar">
-        <- Voltar
-    </a>
+    <button onclick ="history.go(-1);">
+       Voltar 
+    </button>
 
 </div>
     

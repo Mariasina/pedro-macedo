@@ -25,11 +25,24 @@ li{
     position: relative;
     left: 13%;
 }
+.titulo {
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
 .corpo {
     background-color: #ceebfb;
-	width: 40%;
+	width: 27%;
 	border-radius: 20%;
     padding: 3%;
-    left: 30%;
+    left: 40%;
     position: relative;
+}
+.h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+.perfil {
+    width: 100px;
+    position: relative;
+    left: 35%;
 }

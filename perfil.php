@@ -62,11 +62,12 @@
     </header> 
     </div> <br/> <br/> <br/>
     <div class="corpo"> 
+    <img src = "img/user.png" class = "perfil"> <br> <br>
 <main class="form-signin w-50 m-auto">
   <form>
     <!--informaões do perfil-->
-    <h2 class="h1 mb-3 fw-normal">
-      Perfil
+    <h2 class="titulo">
+      Meu Perfil
     </h2>
     <div class="form-floating">
       <b>Nome: </b> <?php echo $_SESSION['nome'];?> <br>

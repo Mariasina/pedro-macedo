@@ -1,3 +1,7 @@
+.titulo {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
 .cor {
     background-color: #ceebfb;
 }
@@ -27,9 +31,10 @@ li{
 }
 
 .corpo {
-    margin: 30px;
-    padding: 5%;
+    margin: 4%;
+    padding: 3%;
     position: relative;
+    left: 20%;
 }
 .d {
     border: 20px solid #ceebfb;
@@ -37,4 +42,5 @@ li{
     height: 50%;
     padding: 10px;
     width: 50%;
+    text-align: center;
 }

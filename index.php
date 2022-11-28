@@ -95,7 +95,7 @@ crossorigin="anonymous">
 		<div class="logocentro">
 		<!-- logo e link da educação paraná-->
         <li class="nav-item">
-			<a href= "https://www.educacao.pr.gov.br/desvio.html" class="nav-link link-dark px-2 active" aria-current="page">
+			<a href= "https://www.educacao.pr.gov.br/desvio.html" class="nav-link link-dark px-2 active" aria-current="page" target = "_blank">
 				<img src = "img/logopres.jfif" class = "prlogo">
 			</a>
 		</li>
@@ -413,7 +413,6 @@ crossorigin="anonymous">
 	</div>
 	<!-- Fim 3 Colunas / Notícias -->
 	<!-- Começo Rodapé-->
-	<div class="container-fluid pb-0 mb-0 justify-content-center text-light ">
         <footer class = "pezin">
             <div class="row my-5 justify-content-center py-5">
                 <div class="col-11">
@@ -429,7 +428,7 @@ crossorigin="anonymous">
 							<ul class="list-unstyled text-decoration-none">
 								<li><a href = "index.php">Página Inicial</a></li>
 								<li><a href = "historiacolegio.php">História</a></li>
-								<li><a href = "https://www.facebook.com/pages/Col%C3%A9gio-Estadual-Pedro-Macedo/124373407573346">Facebook</a></li>
+								<li><a href = "https://www.facebook.com/pages/Col%C3%A9gio-Estadual-Pedro-Macedo/124373407573346" target = "_blank">Facebook</a></li>
 								<li>
 									<a href = "login.php" >
 										Apenas moderador
@@ -490,7 +489,6 @@ crossorigin="anonymous">
                 </div>
             </div>
         </footer>
-    </div>
 	  
 	<!-- Fim Rodapé -->
 

@@ -80,8 +80,8 @@ crossorigin="anonymous">
       <div class="container d-flex flex-wrap">
         <ul class="nav me-auto">
           <div class="logocentro">
-          <li class="nav-item"><a href= "https://www.areadoaluno.seed.pr.gov.br/" class="nav-link link-dark px-2 active" aria-current="page">
-              <img src = "img/logopres.jfif" class = "prlogo">
+          <li class="nav-item"><a href= "https://www.areadoaluno.seed.pr.gov.br/" class="nav-link link-dark px-2 active" aria-current="page" target = "_blank">
+              <img src = "img/logopres.jfif" class = "prlogo" >
           </a></li>
           </div>
         </ul>

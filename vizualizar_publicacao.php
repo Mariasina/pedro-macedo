@@ -45,9 +45,9 @@
             <a href="editar_publicacao.php?cod=<?php echo $publicacao['cod'];?>" class = "w-10 btn btn-lg btn-primary rounded-5">
                 Editar
             </a>
-            <a href="bd/excluir_pub.php?cod=<?php echo $publicacao['cod'];?>" name ="excluir" class = "w-10 btn btn-lg btn-primary rounded-5">
-                Excluir
-            </a>
+            <a href = "excluir_publicacao.php?cod=<?php echo $row_usuario['cod'];?>" class = "w-10 btn btn-lg btn-primary rounded-5">
+               Excluir
+            </a>    
         </div> <br>
         <div> <b>
         Essa publicação se encontra na página: 
@@ -127,9 +127,9 @@
       echo  $publicacao['hora'];
       
         ?>
-        <!-- <a href = "area_publicacao.php" class = "voltar">
-          <- Voltar
-        </a> -->
+       <button onclick ="history.go(-1);">
+       Voltar 
+      </button>
         </div>
     </div>
 </body>
