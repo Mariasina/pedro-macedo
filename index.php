@@ -399,6 +399,7 @@ crossorigin="anonymous">
                         $dadosU = $query->get_result()->fetch_assoc();
                     ?>
 						<div class="column1">
+						
 						<?php echo $dados['titulo'];
 							  echo $dados['descricao'];
 							if  ((isset($dados['imagem'])) &&  (!empty($dados['imagem']))){ ?>

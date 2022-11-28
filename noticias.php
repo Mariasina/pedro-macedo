@@ -202,14 +202,14 @@ crossorigin="anonymous">
     <?php 
         echo "" . $row_usuario['descricao']; 
 	?>
-            </div>
+          <br>  </div>
     <?php
         if  ((isset($row_usuario['imagem'])) &&  (!empty($row_usuario['imagem']))){ 
 	?>
         <img src="pedro_macedo/
 		<?php echo $row_usuario['imagem']; } ?>  ">   <br/>
 
-<!--botões-->
+<!--botões--> <br>
 			<div class = "acoes">
 				<a href="vizualizar_publicacao.php?cod=<?php echo $row_usuario['cod'];?>" class = "w-10 btn btn-lg btn-primary rounded-5">
 				Visualizar

@@ -310,14 +310,16 @@ img {
 }
 
 /*COLUNAS */
-
+img  {
+	width:250px;
+}
 .column1 {
 	background-color: rgb(206, 182, 255);
 	flex: 1;
 	border: 1px solid pink;
 	margin: 2px;
 	padding: 10px;
-	width: 100px;
+	width: 100px; 
 	
 	
 }
