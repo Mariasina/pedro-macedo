@@ -67,7 +67,7 @@
     </div> 
            <!--Pega as informações dos usuários cadastrados e cria uma variável para que sejam exibidos-->
 <div class = "corpo">
-        <h1>Usuários Cadastrados</h1>
+        <h1 class = "titulo">Usuários Cadastrados</h1>
         <?php
 
             $selecionar = "SELECT * FROM usuario WHERE pendencia = 0";

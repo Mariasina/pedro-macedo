@@ -9,6 +9,9 @@ body {
   padding-bottom: 40px;
   
 }
+.vermelhin {
+	color: red;
+}
 .corpo {
 	background-color: #ceebfb;
 	width: 40%;

@@ -25,6 +25,10 @@ li{
     position: relative;
     left: 13%;
 }
+.titulo {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}   
 .corpo {
     margin: 30px;
     padding: 5%;
@@ -37,6 +41,6 @@ li{
     height: 50%;
     padding: 10px;
     width: 50%;
-    position: static;
-    display: block;
+    position: relative;
+    left: 25%;
 }
