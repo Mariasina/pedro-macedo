@@ -314,22 +314,22 @@ img  {
 	width:250px;
 }
 .column1 {
-	background-color: rgb(206, 182, 255);
+	background-color: #afcdea;
 	flex: 1;
-	border: 1px solid pink;
-	margin: 2px;
+	border: 1px solid #98c3ed;
+	margin: 20px;
 	padding: 10px;
-	width: 100px; 
+	width: 150px; 
 	
 	
 }
 .column2 {
-	background-color: rgb(172, 235, 231);
+	background-color:  #afcdea;
 	flex: 1;
 	border: 1px solid yellow;
-	margin: 2px;
+	margin: 20px;
 	padding: 10px;
-	width: 100px;
+	width: 150px;
 
 	
 }
@@ -337,9 +337,9 @@ img  {
 	background-color: lightpink;
 	flex: 1;
 	border: 1px solid purple;
-	margin: 2px;
+	margin: 20px;
 	padding: 10px;
-	width: 100px;
+	width: 150px;
 }
 
 footer {
