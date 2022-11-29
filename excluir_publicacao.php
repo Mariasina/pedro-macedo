@@ -30,9 +30,9 @@
             ATENÇÃO VOCÊ ESTÁ PRESTES A EXCLUIR UMA PUBLICAÇÃO, VOCÊ TEM CERTEZA DISSO?
         </h1>
         <div class = "botoes">
-            <a href = "area_publicacao.php" class = "w-10 btn btn-lg btn-secondary rounded-5"> 
-                Não, Voltar. 
-            </a>
+            <button onclick ="history.go(-1);" class = "w-10 btn btn-lg btn-secondary rounded-5">
+               Não, Voltar.
+             </button>
             <a href="bd/excluir_pub.php?cod=<?php echo $row_usuario['cod'];?>" name ="excluir" class = "w-10 btn btn-lg btn-danger rounded-5" >
                 Sim, Excluir.
             </a>

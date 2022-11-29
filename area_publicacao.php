@@ -89,7 +89,7 @@
                 if  ((isset($row_usuario['imagem'])) &&  (!empty($row_usuario['imagem']))){ ?>
                 <img src="pedro_macedo/<?php echo $row_usuario['imagem'];?>">  <?php }?>  
             
-                    <br/>
+                    <br/> <br>
                     <!--botões-->
                     <div class = "acoes">
                     <!--php para criar o cod da pub na url-->
@@ -103,6 +103,7 @@
                         Excluir
                     </a>    
                     </div>
+                    <br>
                     <div>
                     <?php $pagina = $row_usuario['pagina'];?>
                     Essa publicação se encontra na página: 

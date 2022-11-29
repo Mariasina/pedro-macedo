@@ -221,22 +221,22 @@ crossorigin="anonymous">
     <div class="carousel-item active" data-bs-interval="10000">
       <img src="img/escola-carrossel.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Primeira imagem do carrossel</h5>
-        <p>Texto para a primeira imagem do carrossel.</p>
+        <h5 class = "branco">Fachada do Colégio</h5>
+        <p class = "branco">Fachada de entrada do Colégio Pedro Macedo.</p>
       </div>
     </div>
     <div class="carousel-item" data-bs-interval="2000">
       <img src="img/escola-carrossel3.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Segunda imagem do carrossel</h5>
-        <p>algum texto pra segunda imagem do carrossel.</p>
+        <h5 class = "branco">Entrada do Colégio</h5>
+        <p class = "branco">Calçada de entrada do Colégio Pedro Macedo.</p>
       </div>
     </div>
     <div class="carousel-item">
       <img src="img/escola-carrossel4.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>terceira imagem do carrossel</h5>
-        <p>alguma descricao para a terceira imagem do carrossel.</p>
+        <h5 class = "branco">Cantina do Colégio</h5>
+        <p class = "branco">Lugar onde os alunos e professores tomam suas refeições.</p>
       </div>
     </div>
   </div>
