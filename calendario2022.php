@@ -206,7 +206,7 @@ crossorigin="anonymous">
         if  ((isset($row_usuario['imagem'])) &&  (!empty($row_usuario['imagem']))){ 
 	?>
         <img src="pedro_macedo/
-		<?php echo $row_usuario['imagem']; } ?>  ">   <br/>
+		<?php echo $row_usuario['imagem']; ?> ">  <?php }?>   <br/>
 
 <!--botões-->
 	<?php 
@@ -220,9 +220,9 @@ crossorigin="anonymous">
 				<a href="editar_publicacao.php?cod=<?php echo $row_usuario['cod'];?>" class = "w-10 btn btn-lg btn-primary rounded-5">
 				Editar
 				</a>
-				<a href="bd/excluir_pub.php?cod=<?php echo $row_usuario['cod'];?>" class = "w-10 btn btn-lg btn-primary rounded-5">
-				Excluir
-				</a>
+				<a href = "excluir_publicacao.php?cod=<?php echo $row_usuario['cod'];?>" class = "w-10 btn btn-lg btn-primary rounded-5">
+                Excluir
+                </a>
 			</div>
 
 			<div class = "hora">

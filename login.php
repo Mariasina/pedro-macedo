@@ -55,9 +55,9 @@
     </div><br>
     <input class="w-50 btn btn-lg btn-primary" name="env" type="submit" value="Entrar">
     
-    <a href="cadastro.html"><p class="mt-5 mb-3 text-muted">
+    <!-- <a href="cadastro.html"><p class="mt-5 mb-3 text-muted">
        Cadastre-se
-    </p></a>
+    </p></a> -->
   </form>
 
   <?php include_once("bd/login_.php");?>

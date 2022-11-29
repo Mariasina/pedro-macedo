@@ -219,21 +219,21 @@ crossorigin="anonymous">
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="10000">
-      <img src="https://img.cancaonova.com/cnimages/canais/uploads/sites/6/2014/12/formacao_como-escolher-a-melhor-escola-para-os-filhos.jpg" class="d-block w-100" alt="...">
+      <img src="img/escola-carrossel.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>Primeira imagem do carrossel</h5>
         <p>Texto para a primeira imagem do carrossel.</p>
       </div>
     </div>
     <div class="carousel-item" data-bs-interval="2000">
-      <img src="https://www.hypeness.com.br/1/2019/09/escla4.jpg" class="d-block w-100" alt="...">
+      <img src="img/escola-carrossel3.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>Segunda imagem do carrossel</h5>
         <p>algum texto pra segunda imagem do carrossel.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="https://img.freepik.com/vetores-gratis/mao-desenhada-de-volta-ao-fundo-da-escola_23-2149056177.jpg?w=2000" class="d-block w-100" alt="...">
+      <img src="img/escola-carrossel4.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>terceira imagem do carrossel</h5>
         <p>alguma descricao para a terceira imagem do carrossel.</p>
@@ -403,9 +403,10 @@ crossorigin="anonymous">
 						<?php echo $dados['titulo'];
 							  echo $dados['descricao'];
 							if  ((isset($dados['imagem'])) &&  (!empty($dados['imagem']))){ ?>
-							<img src="pedro_macedo/<?php echo $dados['imagem'];?>">  <?php }?>
-						?>
-						
+							<img src="pedro_macedo/<?php echo $dados['imagem'];?> ">  <?php }?><br><br>
+							<a href="vizualizar_publicacao.php?cod=<?php echo $dados['cod'];?>" class = "w-10 btn btn-lg btn-primary rounded-5">
+                        Visualizar
+                    </a>
 						</div>
                     
                 <?php }}?>

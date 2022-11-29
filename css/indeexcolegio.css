@@ -261,6 +261,7 @@ svg[hidden] {
   .carousel-caption {
 	bottom: 3rem;
 	z-index: 10;
+	color: #ffffff;
   }
   
   /* declarando altura por conta do posicionamento do img*/

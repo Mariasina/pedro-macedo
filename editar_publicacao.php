@@ -37,12 +37,12 @@
            
     <!-- IMAGEM  -->
 
-        <div class="mb-3">
+        <!-- <div class="mb-3">
 
             <label for="formFile" class="form-label"></label>
         <h3 class = "texto">Adicione uma imagem para alteração:</h3>
             <input class="form-control" accept="image/*" type="file" name="imagem" id="formFile"> <br> <br>
-        </div>
+        </div> -->
 
      <!-- DESCRICAO  -->
 
